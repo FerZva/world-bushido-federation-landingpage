@@ -137,7 +137,3 @@ Memberships = [
     Membership: "True",
   },
 ];
-
-ProductsCart = [
-    
-]

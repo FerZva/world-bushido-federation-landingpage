@@ -31,7 +31,7 @@ const Header = () => {
         
       </div>
       <nav className={`h-full items-center py-8 md:block ${menuState ? 'hidden' : 'block'}`} >
-        <Link href="/about" className="min-h-full ml-[0.50rem]">Home</Link>
+        <Link href="/" className="min-h-full ml-[0.50rem]">Home</Link>
         <Link href="/about" className="min-h-full ml-[0.50rem]">OUR WBF</Link>
         <Link href="/committee" className="min-h-full ml-[0.50rem]"> Committee</Link>
         <Link href="/memberships" className="min-h-full ml-[0.50rem]">Membership</Link>

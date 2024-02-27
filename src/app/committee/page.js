@@ -6,7 +6,7 @@ import Header from "../components/Header";
 const page = () => {
   const data = Committee;
   return (
-    <div className="w-full min-h[100vh] bg-black ">
+    <div className="w-full min-h[100vh]">
       <Header />
       <div>
         <h2>

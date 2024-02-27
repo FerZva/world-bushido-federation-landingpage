@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import LightLogo from "../assets/BUSHIDO1.png";
 import DarkLogo from "../assets/BUSHIDO2.png";
-import NewDarkLogo from "../assets/BUSHIDO2.webp";
+import NewDarkLogo from "../assets/logo.webp";
 
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";

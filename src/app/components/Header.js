@@ -17,7 +17,7 @@ const Header = () => {
   }
 
   return (
-    <header className="flex justify-between h-[100px]">
+    <header className="flex justify-between h-[100px] sticky top-0 w-full backdrop-blur-xl">
       <div className="h-full">
         <Link href="/" className="py-4">
             <Image
@@ -30,22 +30,23 @@ const Header = () => {
         </Link>
         
       </div>
-      <nav className={`h-full items-center  className="py-4" md:block ${menuState ? 'hidden' : 'block'}`} >
-        <Link href="./">Home</Link>
-        <Link href="./products">OUR WBF</Link>
-        <Link href="./">Committee</Link>
-        <Link href="./">Membership</Link>
-        <Link href="./">ICO WBFC</Link>
+      <nav className={`h-full items-center py-8 md:block ${menuState ? 'hidden' : 'block'}`} >
+        <Link href="/about" className="min-h-full ml-[0.50rem]">Home</Link>
+        <Link href="/about" className="min-h-full ml-[0.50rem]">OUR WBF</Link>
+        <Link href="/committee" className="min-h-full ml-[0.50rem]"> Committee</Link>
+        <Link href="/memberships" className="min-h-full ml-[0.50rem]">Membership</Link>
+        <Link href="/" className="min-h-full ml-[0.50rem]">ICO WBFC</Link>
+
         <button>join</button>
       </nav>
       <div>
         
         <div onClick={toggleMenu} className="block md:hidden">
-            {
+            { 
                 menuState ? 
-                    <FaBars/>
+                    <FaBars className="text-[30px]"/>
                     : 
-                    <AiOutlineClose/>
+                    <AiOutlineClose className="text-[30px]"/>
             }
         </div>
         

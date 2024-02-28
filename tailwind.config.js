@@ -14,6 +14,11 @@ module.exports = {
       },
       colors: {
         richblack: "#0f1a20",
+        buttonbg: "#8A4FFF",
+        buttonbghover: "#AC82FF",
+      },
+      screens: {
+        sm: '100px',
       }
     },
   },

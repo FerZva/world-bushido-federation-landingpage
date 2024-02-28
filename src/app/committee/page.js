@@ -21,9 +21,7 @@ const page = () => {
             <div key={index} className="w-full max-w-[150px] align-center">
               <Image
                 src={committeePicture}
-                width={100}
-                height={100}
-                className="m-[auto]"
+                className="m-[auto] w-full max-h-[150px]"
               />
               <h3>{commiteName}</h3>
               <p>{description}</p>
@@ -31,18 +29,6 @@ const page = () => {
           );
         })}
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };

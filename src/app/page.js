@@ -4,12 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import bushidoLogo from './assets/WORLD BUSHIDO.webp'
 import Button from './components/Button';
+import './styles/styles.scss'
 
 export default function Home() {
   return (
     <body className="relative px-10 md:px-5 ">
       <Header />
-      <main className="flex flex-row flex-wrap justify-between items-center md:flex-col sm:flex-col">
+      <main className="flex flex-row flex-wrap justify-between items-center md:flex-col  md:items-start sm:flex-col">
         <div className="w-full max-w-[50%] text-center p-10 md:order-2 md:max-w-full sm:max-w-full sm:order-2">
           <p>
             So far our Federations is full of Martial Artists a few Fighting
@@ -18,7 +19,7 @@ export default function Home() {
             Warriors Code.
           </p>
           <br />
-          <p>Shihan Jorge Borjas CEO & FOUNDER WBF</p>
+          <p>Hanshi Jorge Borjas CEO & FOUNDER WBF</p>
           <Button buttontext="Join"/>
           <button></button>
         </div>

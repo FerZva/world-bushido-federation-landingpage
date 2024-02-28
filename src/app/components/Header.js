@@ -33,7 +33,7 @@ const Header = () => {
         </Link>
         
       </div>
-      <nav className={`flex flex-row h-full items-center py-8 md:block md:bg ${menuState ? 'hidden' : 'block'}`} >
+      <nav className={`flex flex-row h-full items-center py-8 ${menuState ? 'hidden' : 'block md:flex-col'} `} >
         <div>
           <Link href="./" className="min-h-full ml-[0.50rem]">Home</Link>
           <Link href="/about" className="min-h-full ml-[0.50rem]">OUR WBF</Link>

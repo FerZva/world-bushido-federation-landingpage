@@ -1,66 +1,83 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import LightLogo from "../assets/BUSHIDO1.png";
-import DarkLogo from "../assets/BUSHIDO2.png";
 import NewDarkLogo from "../assets/logo.webp";
 
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import Button from '../components/Button'
-
+import Button from "../components/Button";
 
 const Header = () => {
   const [menuState, setMenuState] = useState(true);
 
   const toggleMenu = () => {
-    setMenuState(!menuState)
-  }
+    setMenuState(!menuState);
+  };
 
   return (
-    <header className="flex justify-between h-[100px] sticky top-0 w-full backdrop-blur-xl px-1">
-      <div className="h-full py-8">
-        <Link href="/" className="py-4">
-            <Image
+    <header className="container_header">
+      <div className="container_header_logo-container">
+        <Link href="/" className="container_header_logo-container_link">
+          <Image
             src={NewDarkLogo}
             alt="World Bushido Federation Logo"
             width={100}
             height={100}
             priority={false}
-            />
+          />
         </Link>
-        
       </div>
-      <nav className={`flex flex-row h-full items-center py-8 ${menuState ? 'hidden' : 'block md:flex-col'} `} >
-        <div>
-          <Link href="./" className="min-h-full ml-[0.50rem]">Home</Link>
-          <Link href="/about" className="min-h-full ml-[0.50rem]">OUR WBF</Link>
-          <Link href="/committee" className="min-h-full ml-[0.50rem]"> Committee</Link>
-          <Link href="/memberships" className="min-h-full ml-[0.50rem]">Membership</Link>
-          <Link href="/" className="min-h-full ml-[0.50rem]">ICO WBFC</Link>
+
+      <nav
+        className={`container_header_navigation`}
+        style={{ display: menuState ? "flex" : "none" }}
+      >
+        <div className="container_header_navigation_menu">
+          <Link href="./" className="container_header_navigation_menu_link">
+            Home
+          </Link>
+          <Link href="/about" className="container_header_navigation_menu_link">
+            OUR WBF
+          </Link>
+          <Link
+            href="/committee"
+            className="container_header_navigation_menu_link"
+          >
+            {" "}
+            Committee
+          </Link>
+          <Link
+            href="/memberships"
+            className="container_header_navigation_menu_link"
+          >
+            Membership
+          </Link>
+          <Link href="/" className="container_header_navigation_menu_link">
+            ICO WBFC
+          </Link>
         </div>
 
-        <div className="flex">
-          <MdOutlineShoppingBag className="text-[30px]"/>
-          <Button buttontext="Join"/>
+        <div className="container_header_navigation_buttons">
+          <MdOutlineShoppingBag className="container_header_navigation_buttons_shoping-icon" />
+          <Button buttontext="Join" />
         </div>
       </nav>
-      <div>
-        
-        <div onClick={toggleMenu} className="block md:hidden py-8">
-            { 
-                menuState ? 
-                    <FaBars className="text-[30px]"/>
-                    : 
-                    <AiOutlineClose className="text-[30px]"/>
-            }
+      <div className="container_header_menu-toggle-container">
+        <div
+          onClick={toggleMenu}
+          className="container_header_menu-toggle-container_toggle-button"
+        >
+          {menuState ? (
+            <AiOutlineClose className="container_header_menu-toggle-container_toggle-button_close-icon" />
+          ) : (
+            <FaBars className="container_header_menu-toggle-container_toggle-button_burger-icon" />
+          )}
         </div>
-        
       </div>
     </header>
   );
-}
+};
 
 export default Header;

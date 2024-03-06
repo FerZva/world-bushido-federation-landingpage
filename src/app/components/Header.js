@@ -8,6 +8,7 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import Button from "../components/Button";
+import '../styles/styles.scss'
 
 const Header = () => {
   const [menuState, setMenuState] = useState(true);
@@ -24,44 +25,48 @@ const Header = () => {
             src={NewDarkLogo}
             alt="World Bushido Federation Logo"
             width={100}
-            height={100}
+            
             priority={false}
           />
         </Link>
       </div>
 
       <nav
-        className={`container_header_navigation`}
+        className="container_header_navigation"
         style={{ display: menuState ? "flex" : "none" }}
       >
         <div className="container_header_navigation_menu">
           <Link href="./" className="container_header_navigation_menu_link">
-            Home
+            <p>Home</p>
           </Link>
           <Link href="/about" className="container_header_navigation_menu_link">
-            OUR WBF
+            <p>OUR WBF</p>
           </Link>
           <Link
             href="/committee"
             className="container_header_navigation_menu_link"
+          
           >
             {" "}
-            Committee
+            <p>Committee</p>
           </Link>
           <Link
             href="/memberships"
             className="container_header_navigation_menu_link"
+          
           >
-            Membership
+            <p>Membership</p>
           </Link>
-          <Link href="/" className="container_header_navigation_menu_link">
-            ICO WBFC
-          </Link>
+          {/* <Link href="/" className="container_header_navigation_menu_link">
+            <p>ICO WBFC</p>
+          </Link> */}
         </div>
 
         <div className="container_header_navigation_buttons">
-          <MdOutlineShoppingBag className="container_header_navigation_buttons_shoping-icon" />
-          <Button buttontext="Join" />
+          <Link href="/cart">
+            <MdOutlineShoppingBag className="container_header_navigation_buttons_shoping-icon" />
+          </Link>
+          <Button buttontext="Join" link="/cart" />
         </div>
       </nav>
       <div className="container_header_menu-toggle-container">

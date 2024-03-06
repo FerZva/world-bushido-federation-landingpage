@@ -2,33 +2,44 @@ import React from "react";
 import { Committee } from "../services/data";
 import Image from "next/image";
 import Header from "../components/Header";
+import Footer from '../components/Footer'
+import '../styles/styles.scss'
 
 const page = () => {
   const data = Committee;
   return (
-    <div className="w-full min-h[100vh]">
+    <div className="container">
       <Header />
-      <div>
-        <h2>
-          The goal of the World Bushido Federation Teaching and passing on the
-          right tradition to martial artists._
-        </h2>
+      <div className="container_committee-container">
+
+        <div className="container_committee-container_description">
+          <h2>
+            The goal of the World Bushido Federation Teaching and passing on the
+            right tradition to martial artists
+          </h2>
+        </div>
+
+        <div className="container_committee-container_committee">
+          {data.map((committee, index) => {
+            const { committeePicture, commiteName, description } = committee;
+            return (
+              <div key={index} className="container_committee-container_committee_card">
+                <Image
+                  src={committeePicture}
+                  width={300}
+                  height={300}
+                />
+                <div className="container_committee-container_committee_card_description">
+                  <h3>{commiteName}</h3>
+                  <p>{description}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
       </div>
-      <div className="flex flex-wrap justify-around text-center">
-        {data.map((committee, index) => {
-          const { committeePicture, commiteName, description } = committee;
-          return (
-            <div key={index} className="w-full max-w-[150px] align-center">
-              <Image
-                src={committeePicture}
-                className="m-[auto] w-full max-h-[150px]"
-              />
-              <h3>{commiteName}</h3>
-              <p>{description}</p>
-            </div>
-          );
-        })}
-      </div>
+      <Footer />
     </div>
   );
 };

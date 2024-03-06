@@ -36,6 +36,11 @@ export const  Disciplines = [
 //Committee
 export const Committee = [
   {
+    committeePicture: committee3,
+    commiteName: "GM. Jorge A Borjas",
+    description: "Founder / President",
+  },
+  {
     committeePicture: committee1,
     commiteName: "Dr. Simon Kook",
     description: "Secretary",
@@ -44,11 +49,6 @@ export const Committee = [
     committeePicture: committee2,
     commiteName: "Master Juan",
     description: "Coordinator",
-  },
-  {
-    committeePicture: committee3,
-    commiteName: "GM. Jorge A Borjas",
-    description: "Founder / President",
   },
   {
     committeePicture: committee4,

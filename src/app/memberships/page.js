@@ -42,7 +42,8 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Membership",
-                      productPrice: "150"
+                      productPrice: "150",
+                      description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide."
                     },
                   }}
                 >

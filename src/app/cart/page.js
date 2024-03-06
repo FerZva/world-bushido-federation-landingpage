@@ -3,9 +3,8 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/styles.scss'
+import axios from 'axios'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
-import axios from 'axios';
-
 
 function Page({ searchParams }) {
  
@@ -26,31 +25,31 @@ function Page({ searchParams }) {
         <div>
         </div>
 
-        <div className='container_checkout-container_payment-method-container'>
-          <PayPalScriptProvider options={{ "client-id": "Acoo8Nj6KYBnmWdvhe6pl1KwWlidh3oZUzD09QsSRNTKP2ZPLP6rX-tMdO392FCzjJ0Mx92qzENcTBS5" }}>
-            <PayPalButtons style={{layout: 'vertical'}} createOrder={async ()=> {
-              try {
-                const response = await axios({
-                  url: "http://localhost:3000/api/payment",
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json"
-                  }
-                })
-                return response.data.id;
-              } catch (error) {
-                console.log(error)
-              }
-            }}
-            onCancel={data => console.log("payment cancelled")}
-            onApprove={(data, actions) => {
-              console.log(data)
-              actions.order.capture()
-            }}
-            />
-          </PayPalScriptProvider>
-            <button >Pay with PayPal</button>
-        </div>
+      <div className='container_checkout-container_payment-method-container'>
+        <PayPalScriptProvider
+         options={{clientId: "Acoo8Nj6KYBnmWdvhe6pl1KwWlidh3oZUzD09QsSRNTKP2ZPLP6rX-tMdO392FCzjJ0Mx92qzENcTBS5"}}
+        >
+          <PayPalButtons 
+              createOrder={async () => {
+              const res = await fetch('/api/checkout', {
+                method: "POST"
+              })
+              const order = await res.json()
+              console.log(order)
+              return order.id
+              }}
+              onApprove={(data, actions) => {
+                console.log(data);
+                actions.order.capture()
+              }}
+              onCancel={(data) => {
+                console.log("cancelled", data)
+              } }
+
+          />
+        </PayPalScriptProvider>
+        
+      </div>
       </section>
 
       <Footer />

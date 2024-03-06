@@ -33,16 +33,7 @@ export async function POST() {
                         quantity: "1",
                         unit_amount: {
                             currency_code: "USD",
-                            value: "50.00"
-                        }
-                    },
-                    {
-                        name: "book of next",
-                        description: "book about next",
-                        quantity: "1",
-                        unit_amount: {
-                            currency_code: "USD",
-                            value: "50.00"
+                            value: "100.00"
                         }
                     }
                 ]

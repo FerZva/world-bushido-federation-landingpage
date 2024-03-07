@@ -19,7 +19,7 @@ function Page({ searchParams }) {
             <div className='container_checkout-container_products-cart-container_items-container'>
               <p className='container_checkout-container_products-cart-container_items-container_item-product-name'>Product: {searchParams.productName}</p>
               <p className='container_checkout-container_products-cart-container_items-container_item-product-price'>Price: ${searchParams.productPrice}</p>
-              <p className='container_checkout-container_products-cart-container_items-container_item-product-price'>Price: ${searchParams.description}</p>
+              <p className='container_checkout-container_products-cart-container_items-container_item-product-price'>{searchParams.description}</p>
               
             </div>
         </div>
@@ -31,7 +31,14 @@ function Page({ searchParams }) {
             <PayPalButtons 
                 createOrder={async () => {
                 const res = await fetch('/api/checkout', {
-                  method: "POST"
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    productName: searchParams.productName,
+                    productPrice: searchParams.productPrice
+                  })
                 })
                 const order = await res.json()
                 console.log(order)

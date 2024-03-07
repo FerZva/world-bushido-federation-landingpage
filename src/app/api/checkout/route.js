@@ -8,7 +8,8 @@ const enviroment = new paypal.core.SandboxEnvironment(clientId, clientSecret)
 
 const client = new paypal.core.PayPalHttpClient(enviroment)
 
-export async function POST() {
+export async function POST(req) {
+    const { productName, productPrice } = await req.json();
     
     const request = new paypal.orders.OrdersCreateRequest()
 
@@ -18,11 +19,11 @@ export async function POST() {
             {
                 amount: {
                     currency_code: "USD",
-                    value: "100.00",
+                    value: productPrice,
                     breakdown: {
                         item_total: {
                             currency_code: "USD",
-                            value: "100.00"
+                            value: productPrice
                         }
                     }
                 },
@@ -33,7 +34,7 @@ export async function POST() {
                         quantity: "1",
                         unit_amount: {
                             currency_code: "USD",
-                            value: "100.00"
+                            value: productPrice
                         }
                     }
                 ]

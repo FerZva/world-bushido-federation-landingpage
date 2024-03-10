@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import CEOPicture from '../assets/CEO.png';
-import BushidoLogo from '../assets/WORLD BUSHIDO.webp';
+import BushidoLogo from '../assets/WORLD-BUSHIDO.png';
 import '../styles/styles.scss'
 
 

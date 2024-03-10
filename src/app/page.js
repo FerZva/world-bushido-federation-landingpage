@@ -3,8 +3,8 @@ import Header from "./components/Header";
 import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import bushidoLogo from './assets/WORLD BUSHIDO.webp'
-import bushidoPoster from './assets/WORLD BUSHIDO.webp'
+import bushidoLogo from './assets/WORLD BUSHIDO.png'
+import bushidoPoster from './assets/WORLD BUSHIDO.png'
 import warriorIcon from './assets/martial-arts.png'
 import growIcon from './assets/karate.png'
 import learnIcon from './assets/master.png'

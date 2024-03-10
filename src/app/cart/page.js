@@ -17,16 +17,16 @@ function Page({ searchParams }) {
           <h2 className='container_checkout-container_products-cart-container_title'>Your shopping cart</h2>
           {/* Mapear los productos en la colección */}
             <div className='container_checkout-container_products-cart-container_items-container'>
-              <p className='container_checkout-container_products-cart-container_items-container_item-product-name'>Product: {searchParams.productName}</p>
+              <h3 className='container_checkout-container_products-cart-container_items-container_item-product-name'>{searchParams.productName}</h3>
+              <p className='container_checkout-container_products-cart-container_items-container_item-product-description'>{searchParams.description}</p>
               <p className='container_checkout-container_products-cart-container_items-container_item-product-price'>Price: ${searchParams.productPrice}</p>
-              <p className='container_checkout-container_products-cart-container_items-container_item-product-price'>{searchParams.description}</p>
               
             </div>
         </div>
 
         <div className='container_checkout-container_payment-method-container'>
           <PayPalScriptProvider
-          options={{clientId: "Acoo8Nj6KYBnmWdvhe6pl1KwWlidh3oZUzD09QsSRNTKP2ZPLP6rX-tMdO392FCzjJ0Mx92qzENcTBS5"}}
+          options={{clientId: "AU_peuTR3VCih7WRlhZ3UBXp5xwURSiso-3qykIUEq9ppVo35tP4vdc4-SLfNK93eG6_IkOlq6jh0jgI"}}
           >
             <PayPalButtons 
                 createOrder={async () => {

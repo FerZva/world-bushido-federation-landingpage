@@ -25,7 +25,7 @@
         align-items: center;
         
         backdrop-filter: blur(10px);
-        z-index: 5;
+        z-index: 200;
 
         &_logo-container {
             min-height: 100%;
@@ -52,7 +52,7 @@
             &_menu {
                 display: flex;
                 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width:1100px) {
                     flex-direction: column;
                     margin-bottom: 50px;
                 }
@@ -69,7 +69,7 @@
                         color: rgb(183, 0, 255);
                     }
 
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width:1100px) {
                         display: block;
                         width: 100%;
                         margin: 30px 0 0 auto;
@@ -84,6 +84,10 @@
                     font-size: 30px;
                     color: white;
                     margin-right: 30px;
+
+                    @media screen and (max-width:1100px) {
+                        margin-left: 47%;
+                     }
                     &:hover {
                         transition: ease 0.2s;
                         cursor: pointer;
@@ -91,15 +95,17 @@
                     }
                 } 
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width:1100px) {
                    order: 1;
+                   flex-direction: column;
+                   justify-content: center;
                 }
             }
-            @media screen and (max-width:1200px) {
-                width: 80%;
+            @media screen and (max-width:1100px) {
+                width: 110%;
                 position: absolute;
                 padding: 2.5rem;
-                top: 300px;
+                top: 182px;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 background-color: hsla(200,16%,17%,1);
@@ -110,14 +116,14 @@
         }
 
         &_menu-toggle-container {
-            color: white;
+            color: white; 
             &_toggle-button {
                 display: none;
 
                 &_burger-icon, &_close-icon{
                     font-size: 30px;
                 } 
-                @media screen and (max-width: 1200px) {
+                @media screen and (max-width: 1100px) {
                     display: block;
                     padding: 2rem 0;
                 }
@@ -230,6 +236,23 @@
 
         &_description {
             padding: 2rem;
+            &_title {
+                margin-bottom: 20px;
+            }
+
+            &_description {
+                margin-bottom: 20px;
+            }
+
+            &_link {
+                text-decoration:underline;
+                color: white;
+                &:hover {
+                    transition: ease 0.2s;
+                    cursor: pointer;
+                    color: rgb(183, 0, 255);
+                }
+            }
         }
         &_commitecard-container {
             display: flex;
@@ -237,6 +260,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin-bottom: 80px;
+
 
             
            
@@ -291,12 +315,29 @@
 
     //Verifications container
     &_verifications-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 100px;
+        width: 100%;
 
+        &_carousel {
+            cursor: grab;
+            overflow: hidden;
+            &_inner-carousel {
+                display: flex;
+
+                &_card {
+                    min-height: 15rem;
+                    min-width: 13rem;
+                    padding: 40px;
+
+
+                    &_img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 2rem;
+                        pointer-events: none
+                    }
+                }
+            }
+        }
         &_card {
             margin: 30px;
         }
@@ -581,13 +622,34 @@
             width: 100%;
 
             @media screen and (max-width: 1100px) {
-                max-width: 50%;
+                max-width: 100%;
+                padding: 0;
             }
         }
 
         &_products-cart-container {
             background-color: hsla(200,16%,17%,1);
             padding: 30px;
+
+            &_title {
+                margin-bottom: 20px;
+            }
+            &_items-container {
+
+
+                &_item-product-name {
+                    margin-bottom: 20px;
+                }
+
+                &_item-product-description {
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                
+                &_item-product-price {
+                    margin-top: 20px;
+                }
+            }
         }
 
         &_payment-method-container {
@@ -597,5 +659,31 @@
         @media screen and (max-width: 1100px) {
             flex-direction: column;
         }
+
+        @media screen and (max-width: 1100px) {
+            padding: 0;
+        }
     }
-}
+} 
+
+.menu {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    @media screen and (max-width: 1100px) {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -130%; /* Initial position outside of the screen */
+        width: 110%;
+        height: 100vh;
+        background-color: #333;
+        transition: left 0.3s ease;
+        justify-content: center;
+    }
+  }
+  
+  .menu-open {
+    left: -10%;
+    /* Move the menu to the left side of the screen */
+  }

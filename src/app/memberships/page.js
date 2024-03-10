@@ -64,7 +64,8 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Instructor Certificate",
-                      productPrice: "1500"
+                      productPrice: "1500",
+                      description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training."
                     },
                   }}
                 >
@@ -83,7 +84,8 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "ID CARD WBF",
-                      productPrice: "250"
+                      productPrice: "250",
+                      description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training"
                     },
                   }}
                 >

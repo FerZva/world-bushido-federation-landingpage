@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NewDarkLogo from "../assets/logo.webp";
@@ -8,15 +8,44 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import Button from "../components/Button";
-import '../styles/styles.scss'
+import "../styles/styles.scss";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [menuState, setMenuState] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuState(!menuState);
+    if (isSmallScreen) {
+      setMenuOpen(!menuOpen);
+    }
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1100);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  //
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth > 1200) {
+        setMenuState(false);
+      } else {
+        setMenuState(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <header className="container_header">
       <div className="container_header_logo-container">
@@ -25,27 +54,56 @@ const Header = () => {
             src={NewDarkLogo}
             alt="World Bushido Federation Logo"
             width={100}
-            
             priority={false}
           />
         </Link>
       </div>
 
-      <nav
-        className="container_header_navigation"
-        style={{ display: menuState ? "flex" : "none" }}
-      >
+      <motion.nav className={`menu ${menuOpen ? "menu-open" : ""}`}>
         <div className="container_header_navigation_menu">
-          <Link href="./" className="container_header_navigation_menu_link">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              marginRight: "30px",
+            }}
+          >
+            {isSmallScreen && (
+              <Link href="/" className="container_header_logo-container_link">
+                <Image
+                  src={NewDarkLogo}
+                  alt="World Bushido Federation Logo"
+                  width={100}
+                  priority={false}
+                  style={{ marginLeft: "40px", marginTop: "10px" }}
+                />
+              </Link>
+            )}
+            <div
+              onClick={toggleMenu}
+              className="container_header_menu-toggle-container_toggle-button"
+            >
+              <AiOutlineClose className="container_header_menu-toggle-container_toggle-button_close-icon" />
+            </div>
+          </div>
+          <Link
+            href="./"
+            className="container_header_navigation_menu_link"
+            onClick={toggleMenu}
+          >
             <p>Home</p>
           </Link>
-          <Link href="/about" className="container_header_navigation_menu_link">
+          <Link
+            href="/about"
+            className="container_header_navigation_menu_link"
+            onClick={toggleMenu}
+          >
             <p>OUR WBF</p>
           </Link>
           <Link
             href="/committee"
             className="container_header_navigation_menu_link"
-          
+            onClick={toggleMenu}
           >
             {" "}
             <p>Committee</p>
@@ -53,32 +111,25 @@ const Header = () => {
           <Link
             href="/memberships"
             className="container_header_navigation_menu_link"
-          
+            onClick={toggleMenu}
           >
             <p>Membership</p>
           </Link>
-          {/* <Link href="/" className="container_header_navigation_menu_link">
-            <p>ICO WBFC</p>
-          </Link> */}
         </div>
 
         <div className="container_header_navigation_buttons">
-          <Link href="/cart">
+          <Link href="/memberships">
             <MdOutlineShoppingBag className="container_header_navigation_buttons_shoping-icon" />
           </Link>
-          <Button buttontext="Join" link="/cart" />
+          <Button buttontext="Join" link="/memberships" />
         </div>
-      </nav>
+      </motion.nav>
       <div className="container_header_menu-toggle-container">
         <div
           onClick={toggleMenu}
           className="container_header_menu-toggle-container_toggle-button"
         >
-          {menuState ? (
-            <AiOutlineClose className="container_header_menu-toggle-container_toggle-button_close-icon" />
-          ) : (
-            <FaBars className="container_header_menu-toggle-container_toggle-button_burger-icon" />
-          )}
+          <FaBars className="container_header_menu-toggle-container_toggle-button_burger-icon" />
         </div>
       </div>
     </header>

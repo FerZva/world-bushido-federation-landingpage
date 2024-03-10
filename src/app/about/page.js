@@ -19,7 +19,7 @@ function page() {
           <h2 className='container_CEO-section_description-container_title'>Welcome to<br />World Bushido Federation</h2>
 
           <p className='container_CEO-section_description-container_paragraph'>
-            I am Shihan Jorge Borjas, Founder of Bushido Federation and World Bushido Federation. This idea came to me after having spent most of my life studying the different Martial Arts and hoping in a unification as well as teaching “Bushido” (Warriors Way) to our students and those that did not know about the way.
+            I am Hanshi Jorge Borjas, Founder of Bushido Federation and World Bushido Federation. This idea came to me after having spent most of my life studying the different Martial Arts and hoping in a unification as well as teaching “Bushido” (Warriors Way) to our students and those that did not know about the way.
           </p>
           <br />
           <p className='container_CEO-section_description-container_paragraph'>

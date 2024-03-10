@@ -30,7 +30,7 @@ function page() {
             Bushido emphasize and negates everything priorly written, as it guides us to: Humility, Integrity, Respect, Honor, Love and mostly Honor. Fellow Martial Artist let’s unite and teach what Matsutatsu Oyama founder of Kyokushin, Gichin Funakoshi, “Father of Modern Karate, Gogen Yamaguchi, Founder Internacional Karate-Do Goku Kai and Morehei Ueshiba the Founder of Aikido the “Art of Love and Harmony”. Let’s leave our disparities aside and let’s follow in their footsteps.
           </p>
           <br />
-          <h4 className='container_CEO-section_description-container_signed'>Shihan Jorge Borjas, Ph.D</h4>
+          <h4 className='container_CEO-section_description-container_signed'>Hanshi Jorge Borjas, Ph.D</h4>
         </div>
       </section>
 

@@ -530,12 +530,12 @@
                 align-items: center;
                 &_image {
                     width: 90%;
-                    height: 500px;
+                    height: 400px;
                     border-radius: 10px;
                     margin-bottom: 30px;
 
                     @media screen and (max-width: 1100px) {
-                       min-height: 350px;
+                       min-height: 300px;
                     }
                 }
             }

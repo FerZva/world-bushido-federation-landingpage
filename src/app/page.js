@@ -85,14 +85,14 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <p>
+            <p className="container_introduction-container_description_paragraph">
               So far our Federations is full of Martial Artists a few Fighting
               stars, many Champion in different systems, so far we have been able
               to create a big family with the same beliefs, and the aplication of
               Warriors Code.
             </p>
             <br />
-            <p>Hanshi Jorge Borjas CEO & FOUNDER WBF</p>
+            <p className="container_introduction-container_description_CEO">Hanshi Jorge Borjas CEO & FOUNDER WBF</p>
             <Button buttontext="Join" link="/memberships"/>
           </motion.div>
           <motion.div

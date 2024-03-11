@@ -92,7 +92,8 @@ export default function Home() {
               Warriors Code.
             </p>
             <br />
-            <p className="container_introduction-container_description_CEO">Hanshi Jorge Borjas CEO & FOUNDER WBF</p>
+            <p className="container_introduction-container_description_CEO">Hanshi Jorge Borjas</p>
+            <p className="container_introduction-container_description_CEO-position">CEO & FOUNDER WBF</p>
             <Button buttontext="Join" link="/memberships"/>
           </motion.div>
           <motion.div

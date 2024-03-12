@@ -3,10 +3,12 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/styles.scss'
-import axios from 'axios'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
 function Page({ searchParams }) {
+  if (!productName || !description || !productPrice) {
+    return <div>Loading...</div>;
+  }
  
   return (
     <div className='container'>

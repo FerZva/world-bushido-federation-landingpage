@@ -5,12 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import bushidoLogo from './assets/WORLD-BUSHIDO.png'
 import bushidoPoster from './assets/WORLD-BUSHIDO.png'
-import warriorIcon from './assets/martial-arts.png'
-import growIcon from './assets/karate.png'
-import learnIcon from './assets/master.png'
-import communityIcon from './assets/respect.png'
+import warriorIcon from './assets/warrior.jpg'
+import growIcon from './assets/Grow.jpg'
+import learnIcon from './assets/learn.jpg'
+import communityIcon from './assets/Honor.jpg'
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Shields } from './services/data'
+import VisibilitySensor from "react-visibility-sensor";
+import { Shields, Disciplines } from './services/data'
 
 import committee1 from './assets/committee17.jpg'
 import committee2 from './assets/committee14.png'
@@ -23,6 +24,27 @@ import './styles/styles.scss';
 import Footer from './components/Footer';
 
 export default function Home() {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+  
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
+
+  const data = Disciplines
   const [width, setWidth] = useState(0)
   const carousel = useRef();
 
@@ -111,6 +133,28 @@ export default function Home() {
           </motion.div>
         </motion.main>
 
+        {/* <section className="container_disciplines-section">
+          <div className="container_disciplines-section_discipline-container">
+            {data.map((disciplines, index) => {
+              const { disciplinesName } = disciplines
+              return (
+                <VisibilitySensor key={index} partialVisibility>
+                  {({ isVisible }) => (
+                    <motion.div
+                      className="container_disciplines-section_discipline-container_discipline-name"
+                      variants={isVisible ? item : {}}
+                      initial="hidden"
+                      animate={isVisible ? "visible" : "hidden"}
+                    >
+                      {disciplinesName}
+                    </motion.div>
+                  )}
+                </VisibilitySensor>
+              );
+            })}
+          </div>
+        </section> */}
+
         <motion.section className="container_cardbenefits-container"
         ref={ref}
         style={{
@@ -118,44 +162,52 @@ export default function Home() {
           opacity: opacityProgress
         }}>
             <motion.div 
-              className="container_cardbenefits-container_card"
+              className="container_cardbenefits-container_card container_cardbenefits-container_card_honor"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <Image src={communityIcon} width={100} height={100} alt="card picture"/>
-              <h3 className="container_cardbenefits-container_card_title">Community with honor</h3>
-              <p className="container_cardbenefits-container_card_description">We are unifying martial arts and returning to real values</p>
+              <Image src={communityIcon} className="container_cardbenefits-container_card_img" width={100} height={100} alt="card picture"/>
+              <div className="container_cardbenefits-container_card_desc">
+                <h3 className="container_cardbenefits-container_card_title">Community with honor</h3>
+                <p className="container_cardbenefits-container_card_description">We are unifying martial arts and returning to real values</p>
+              </div>
             </motion.div>
             <motion.div 
-              className="container_cardbenefits-container_card"
+              className="container_cardbenefits-container_card container_cardbenefits-container_card_warriors"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <Image src={warriorIcon} width={100} height={100} alt="card picture"/>
-              <h3 className="container_cardbenefits-container_card_title">Verified  Warriors</h3>
-              <p className="container_cardbenefits-container_card_description">We verify and validate your martial rank at an international level. Join out great community.</p>
+              <Image className="container_cardbenefits-container_card_img" src={warriorIcon} width={100} height={100} alt="card picture"/>
+              <div className="container_cardbenefits-container_card_desc">
+                <h3 className="container_cardbenefits-container_card_title">Verified  Warriors</h3>
+                <p className="container_cardbenefits-container_card_description">We verify and validate your martial rank at an international level. Join out great community.</p>
+              </div>
             </motion.div>
             <motion.div 
-              className="container_cardbenefits-container_card"
+              className="container_cardbenefits-container_card container_cardbenefits-container_card_learn"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <Image src={learnIcon} width={100} height={100} alt="card picture"/>
-              <h3 className="container_cardbenefits-container_card_title">Learn from the best</h3>
-              <p className="container_cardbenefits-container_card_description">We have a staff of great masters and great cinema martial artist.</p>
+              <Image className="container_cardbenefits-container_card_img" src={learnIcon} width={100} height={100} alt="card picture"/>
+              <div className="container_cardbenefits-container_card_desc">
+                <h3 className="container_cardbenefits-container_card_title">Learn from the best</h3>
+                <p className="container_cardbenefits-container_card_description">We have a staff of great masters and great cinema martial artist.</p>
+              </div>
             </motion.div>
             <motion.div 
-              className="container_cardbenefits-container_card"
+              className="container_cardbenefits-container_card container_cardbenefits-container_card_grow"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <Image src={growIcon} width={100} height={100} alt="card picture" />
-              <h3 className="container_cardbenefits-container_card_title">Grow with us</h3>
-              <p className="container_cardbenefits-container_card_description">Local events and stream, participate in out events, both local and international meetings, free for members.</p>
+              <Image className="container_cardbenefits-container_card_img" src={growIcon} width={100} height={100} alt="card picture" />
+              <div className="container_cardbenefits-container_card_desc">
+                <h3 className="container_cardbenefits-container_card_title">Grow with us</h3>
+                <p className="container_cardbenefits-container_card_description">Local events and stream, participate in out events, both local and international meetings, free for members.</p>
+              </div>
             </motion.div>
         </motion.section>
 
@@ -319,7 +371,7 @@ export default function Home() {
                 className="container_commite-introduction_commitecard-container_card_description_position"
                 htmlFor=""
               >
-                Founder & CEO, Shiban
+                Founder & CEO
               </label>
              </div>
             </div>

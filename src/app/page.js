@@ -10,8 +10,7 @@ import growIcon from './assets/Grow.jpg'
 import learnIcon from './assets/learn.jpg'
 import communityIcon from './assets/Honor.jpg'
 import { motion, useScroll, useTransform } from "framer-motion";
-import VisibilitySensor from "react-visibility-sensor";
-import { Shields, Disciplines } from './services/data'
+import { Shields } from './services/data'
 
 import committee1 from './assets/committee17.jpg'
 import committee2 from './assets/committee14.png'

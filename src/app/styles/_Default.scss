@@ -11,12 +11,12 @@ body {
     width: 100%;
     min-height: 100vh;
     color: rgb(var(--foreground-rgb));
-    background-color:hsla(200,16%,17%,1);
-    background-image:
-    radial-gradient(at 0% 11%, hsla(10,100%,49%,0.38) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, hsla(231,100%,59%,0.38) 0px, transparent 50%);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:#0D0628;
+    // background-image:
+    // radial-gradient(at 0% 11%, hsla(10,100%,49%,0.38) 0px, transparent 50%),
+    // radial-gradient(at 100% 100%, hsla(231,100%,59%,0.38) 0px, transparent 50%);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
   }

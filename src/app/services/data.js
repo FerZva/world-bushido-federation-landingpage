@@ -66,17 +66,17 @@ export const Committee = [
   {
     committeePicture: commitee16,
     commiteName: "Danny Lane",
-    description: "President of World of Bushido Federation",
+    description: "President of World of Bushido Federation In United State of America",
   },
   {
     committeePicture: committee1,
     commiteName: "Dr. Simon Kook",
-    description: "Secretary",
+    description: "Global General Secretary",
   },
   {
     committeePicture: committee2,
-    commiteName: "Master Juan",
-    description: "Coordinator",
+    commiteName: "Master Juan Manuel Olmedo",
+    description: "International Coordinator Bushido Federation",
   },
   {
     committeePicture: committee4,
@@ -101,12 +101,12 @@ export const Committee = [
   {
     committeePicture: committee8,
     commiteName: "GM Soke Raúl Gutierrez López",
-    description: "",
+    description: "Vice-president Bushido Federation in Europe",
   },
   {
     committeePicture: committee9,
     commiteName: "GM Ron Van Clief",
-    description: "Official Committee",
+    description: "Official Committee in United States of America",
   },
   {
     committeePicture: committee10,
@@ -168,9 +168,6 @@ export const Memberships = [
 
 export const Shields = [
   {
-    shield1: Shield1
-  },
-  {
     shield2: Shield2
   },
   {
@@ -181,9 +178,6 @@ export const Shields = [
   },
   {
     shield5: Shield5
-  },
-  {
-    shield6: Shield6
   },
   {
     shield7: Shield7
@@ -205,9 +199,6 @@ export const Shields = [
   },
   {
     shield13: Shield13
-  },
-  {
-    shield14: Shield14
   },
   {
     shield15: Shield15

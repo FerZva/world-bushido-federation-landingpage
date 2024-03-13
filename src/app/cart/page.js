@@ -6,9 +6,6 @@ import '../styles/styles.scss'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
 function Page({ searchParams }) {
-  if (!productName || !description || !productPrice) {
-    return <div>Loading...</div>;
-  }
  
   return (
     <div className='container'>

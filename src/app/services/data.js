@@ -4,20 +4,21 @@ import product2 from "../assets/camisa 2.png";
 import product3 from "../assets/camisa 1.png";
 
 import committee1 from "../assets/committee1.png";
-import committee2 from "../assets/committee2.png";
+import committee2 from "../assets/committee18.jpg"
 import committee3 from "../assets/committee3.png";
-import committee4 from "../assets/committee4.png";
-import committee5 from "../assets/committee5.png";
-import committee6 from "../assets/committee6.jpg";
-import committee7 from "../assets/committee7.jpg";
-import committee8 from "../assets/committee8.jpg";
-import committee9 from "../assets/committee9.jpeg";
-import committee10 from "../assets/committee10.jpeg";
-import committee11 from "../assets/committee11.jpeg";
-import committee12 from "../assets/committee12.jpeg";
-import committee13 from "../assets/committee13.jpeg";
-import committee14 from "../assets/committee14.png";
-import committee15 from "../assets/committee15.jpeg";
+import committee4 from "../assets/committee2.png";
+import committee5 from "../assets/committee4.png";
+import committee6 from "../assets/committee5.png";
+import committee7 from "../assets/committee6.jpg";
+import committee8 from "../assets/committee7.jpg";
+import committee9 from "../assets/committee8.jpg";
+import committee10 from "../assets/committee9.jpeg";
+import committee11 from "../assets/committee10.jpeg";
+import committee12 from "../assets/committee11.jpeg";
+import committee13 from "../assets/committee12.jpeg";
+import committee14 from "../assets/committee13.jpeg";
+import committee15 from "../assets/committee14.png";
+import committee16 from "../assets/committee15.jpeg";
 
 import Shield2 from '../assets/2-150x150.png'
 import Shield3 from '../assets/3-150x150.png'
@@ -60,12 +61,17 @@ export const Committee = [
     description: "Founder / President",
   },
   {
+    committeePicture: committee2,
+    committeeName: "Danny Lane",
+    description: "President of World Bushido Federation USA"
+  },
+  {
     committeePicture: committee1,
     commiteName: "Dr. Simon Kook",
     description: "Secretary",
   },
   {
-    committeePicture: committee2,
+    committeePicture: committee16,
     commiteName: "Master Juan",
     description: "Coordinator",
   },

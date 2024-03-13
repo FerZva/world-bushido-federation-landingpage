@@ -4,26 +4,28 @@ import product2 from "../assets/camisa 2.png";
 import product3 from "../assets/camisa 1.png";
 
 import committee1 from "../assets/committee1.png";
-import committee2 from "../assets/committee18.jpg"
+import committee2 from "../assets/committee2.png";
 import committee3 from "../assets/committee3.png";
-import committee4 from "../assets/committee2.png";
-import committee5 from "../assets/committee4.png";
-import committee6 from "../assets/committee5.png";
-import committee7 from "../assets/committee6.jpg";
-import committee8 from "../assets/committee7.jpg";
-import committee9 from "../assets/committee8.jpg";
-import committee10 from "../assets/committee9.jpeg";
-import committee11 from "../assets/committee10.jpeg";
-import committee12 from "../assets/committee11.jpeg";
-import committee13 from "../assets/committee12.jpeg";
-import committee14 from "../assets/committee13.jpeg";
-import committee15 from "../assets/committee14.png";
-import committee16 from "../assets/committee15.jpeg";
+import committee4 from "../assets/committee4.png";
+import committee5 from "../assets/committee5.png";
+import committee6 from "../assets/committee6.jpg";
+import committee7 from "../assets/committee7.jpg";
+import committee8 from "../assets/committee8.jpg";
+import committee9 from "../assets/committee9.jpeg";
+import committee10 from "../assets/committee10.jpeg";
+import committee11 from "../assets/committee11.jpeg";
+import committee12 from "../assets/committee12.jpeg";
+import committee13 from "../assets/committee13.jpeg";
+import committee14 from "../assets/committee14.png";
+import committee15 from "../assets/committee15.jpeg";
+import commitee16 from "../assets/committee18.jpg"
 
+import Shield1 from '../assets/1-150x150.png'
 import Shield2 from '../assets/2-150x150.png'
 import Shield3 from '../assets/3-150x150.png'
 import Shield4 from '../assets/4-150x150.png'
 import Shield5 from '../assets/5-150x150.png'
+import Shield6 from '../assets/6-150x150.png'
 import Shield7 from '../assets/7-150x150.png'
 import Shield8 from '../assets/8-150x150.png'
 import Shield9 from '../assets/9-150x150.png'
@@ -31,6 +33,7 @@ import Shield10 from '../assets/10-150x150.png'
 import Shield11 from '../assets/11-150x150.png'
 import Shield12 from '../assets/12-150x150.png'
 import Shield13 from '../assets/13-150x150.png'
+import Shield14 from '../assets/14-150x150.png'
 import Shield15 from '../assets/15-150x150.png'
 import Shield16 from '../assets/16-150x150.png'
 import Shield17 from '../assets/17-150x150.png'
@@ -41,16 +44,16 @@ import Shield21 from '../assets/21-150x150.png'
 
 //Disciplines
 export const  Disciplines = [
-  { disciplinesName: "Karate" },
-  { disciplinesName: "Taekwondo" },
-  { disciplinesName: "Judo" },
-  { disciplinesName: "Boxeo" },
-  { disciplinesName: "Kick Boxing" },
-  { disciplinesName: "MMA" },
-  { disciplinesName: "Krav Maga" },
-  { disciplinesName: "Muay Thai" },
-  { disciplinesName: "Jiu-Jitsu Brasileño" },
-  { disciplinesName: "Keysi Fighting Method" },
+  { karate: "Karate" },
+  { taekwondo: "Taekwondo" },
+  { Judo: "Judo" },
+  { Boxeo: "Boxeo" },
+  { KickBoxing: "Kick Boxing" },
+  { mma: "MMA" },
+  { KravMaga: "Krav Maga" },
+  { MuayThai: "Muay Thai" },
+  { JiuJitsuBrasileño: "Jiu-Jitsu Brasileño" },
+  { KeysiFightingMethod: "Keysi Fighting Method" },
 ];
 
 //Committee
@@ -61,9 +64,9 @@ export const Committee = [
     description: "Founder / President",
   },
   {
-    committeePicture: committee2,
-    committeeName: "Danny Lane",
-    description: "President of World Bushido Federation USA"
+    committeePicture: commitee16,
+    commiteName: "Danny Lane",
+    description: "President of World of Bushido Federation",
   },
   {
     committeePicture: committee1,
@@ -71,7 +74,7 @@ export const Committee = [
     description: "Secretary",
   },
   {
-    committeePicture: committee16,
+    committeePicture: committee2,
     commiteName: "Master Juan",
     description: "Coordinator",
   },
@@ -165,6 +168,9 @@ export const Memberships = [
 
 export const Shields = [
   {
+    shield1: Shield1
+  },
+  {
     shield2: Shield2
   },
   {
@@ -175,6 +181,9 @@ export const Shields = [
   },
   {
     shield5: Shield5
+  },
+  {
+    shield6: Shield6
   },
   {
     shield7: Shield7
@@ -196,6 +205,9 @@ export const Shields = [
   },
   {
     shield13: Shield13
+  },
+  {
+    shield14: Shield14
   },
   {
     shield15: Shield15

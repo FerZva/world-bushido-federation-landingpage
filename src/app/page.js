@@ -10,8 +10,7 @@ import growIcon from './assets/Grow.jpg'
 import learnIcon from './assets/learn.jpg'
 import communityIcon from './assets/Honor.jpg'
 import { motion, useScroll, useTransform } from "framer-motion";
-import VisibilitySensor from "react-visibility-sensor";
-import { Shields, Disciplines } from './services/data'
+import { Shields } from './services/data'
 
 import committee1 from './assets/committee17.jpg'
 import committee2 from './assets/committee14.png'
@@ -24,27 +23,7 @@ import './styles/styles.scss';
 import Footer from './components/Footer';
 
 export default function Home() {
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  };
   
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  };
-
-  const data = Disciplines
   const [width, setWidth] = useState(0)
   const carousel = useRef();
 

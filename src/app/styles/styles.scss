@@ -232,15 +232,15 @@
             
             &:hover {
                 transition: ease 0.2s;
-                background-color: #631AE1;
+                background-color: #6912ff;
             }
         }
 
         @media screen and (max-width: 1200px) {                
             padding-top: 0;
-            padding-right: 2.5rem;
+            padding-right: 0;
+            padding-left: 0;
             padding-bottom: 2.5rem;
-            padding-left: 2.5rem;
         }
         
     }

@@ -27,7 +27,7 @@ function memberships() {
                   Membership
                 </h3>
                 <h3 className="container_membershippage-container_products-container_card-container_card_price">
-                  $150
+                  $75
                 </h3>
                 <p className="container_membershippage-container_products-container_card-container_card_label">
                   Per Annual
@@ -42,7 +42,7 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Membership",
-                      productPrice: "150",
+                      productPrice: "75",
                       description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide."
                     },
                   }}
@@ -53,7 +53,7 @@ function memberships() {
 
             <div className="container_membershippage-container_products-container_card-container_card">
                 <h3 className="container_membershippage-container_products-container_card-container_card_title">Instructor Certificate</h3>
-                <h3 className="container_membershippage-container_products-container_card-container_card_price">$1,500</h3>
+                <h3 className="container_membershippage-container_products-container_card-container_card_price">$750</h3>
                 <p className="container_membershippage-container_products-container_card-container_card_label">Most Popular Choise</p>
                 
                 <p className="container_membershippage-container_products-container_card-container_card_description">
@@ -64,7 +64,7 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Instructor Certificate",
-                      productPrice: "1500",
+                      productPrice: "750",
                       description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training."
                     },
                   }}

@@ -25,7 +25,7 @@ function Page({ searchParams }) {
 
         <div className='container_checkout-container_payment-method-container'>
           <PayPalScriptProvider
-          options={{clientId: "AU_peuTR3VCih7WRlhZ3UBXp5xwURSiso-3qykIUEq9ppVo35tP4vdc4-SLfNK93eG6_IkOlq6jh0jgI"}}
+          options={{clientId: "Ad4TxMZhXM-A2adm1IMaZwbKDsdgHUD_MqO5pgdUXtf3R9oSedAWY5ByATwHvK2uBhV4ycCOKPeYAGY4"}}
           >
             <PayPalButtons 
                 createOrder={async () => {

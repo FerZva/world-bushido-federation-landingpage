@@ -3,8 +3,8 @@ const paypal = require('@paypal/checkout-server-sdk');
 
 // Crear un entorno de Sandbox (para pruebas)
 const environment = new paypal.core.SandboxEnvironment(
-  'Acoo8Nj6KYBnmWdvhe6pl1KwWlidh3oZUzD09QsSRNTKP2ZPLP6rX-tMdO392FCzjJ0Mx92qzENcTBS5',
-  'EAlB0a__7dNvYlKPAfyRznQdaHISGVTxhCHgI_t7UKYYZJGK0eo8XobMeP3eha-pvKawFUzIIqCqaEEv'
+  'Ad4TxMZhXM-A2adm1IMaZwbKDsdgHUD_MqO5pgdUXtf3R9oSedAWY5ByATwHvK2uBhV4ycCOKPeYAGY4',
+  'EGMpzuczsDi0KEFvsemmFtc7LVcqyMDkyx8mbA8dCvRmnMhQwlN2oVus9apqoH8vRhkzQXxRqLIqjT02'
 );
 const client = new paypal.core.PayPalHttpClient(environment);
 

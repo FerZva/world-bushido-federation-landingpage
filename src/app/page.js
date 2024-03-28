@@ -10,7 +10,7 @@ import growIcon from './assets/karate.png'
 import learnIcon from './assets/master.png'
 import communityIcon from './assets/respect.png'
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Shields } from './services/data'
+import { Shields, Disciplines } from './services/data'
 
 import committee1 from './assets/committee17.jpg'
 import committee2 from './assets/committee14.png'
@@ -114,25 +114,20 @@ export default function Home() {
 
         {/* <section className="container_disciplines-section">
           <div className="container_disciplines-section_discipline-container">
-            {data.map((disciplines, index) => {
+            {Disciplines.map((disciplines, index) => {
               const { disciplinesName } = disciplines
               return (
-                <VisibilitySensor key={index} partialVisibility>
-                  {({ isVisible }) => (
-                    <motion.div
+                <div key={index}>
+                    <div
                       className="container_disciplines-section_discipline-container_discipline-name"
-                      variants={isVisible ? item : {}}
-                      initial="hidden"
-                      animate={isVisible ? "visible" : "hidden"}
                     >
                       {disciplinesName}
-                    </motion.div>
-                  )}
-                </VisibilitySensor>
+                    </div>
+                </div>
               );
             })}
           </div>
-        </section> */}
+        </section>  */}
 
 <motion.section className="container_cardbenefits-container"
         ref={ref}

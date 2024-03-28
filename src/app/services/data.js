@@ -18,7 +18,8 @@ import committee12 from "../assets/committee12.jpeg";
 import committee13 from "../assets/committee13.jpeg";
 import committee14 from "../assets/committee14.png";
 import committee15 from "../assets/committee15.jpeg";
-import commitee16 from "../assets/committee18.jpg"
+import commitee16 from "../assets/committee16-2.jpg"
+import commitee19 from "../assets/committee19.jpg"
 
 import Shield1 from '../assets/1-150x150.png'
 import Shield2 from '../assets/2-150x150.png'
@@ -139,6 +140,11 @@ export const Committee = [
     commiteName: "GM Rigan Machado",
     description: "President Global Technical Committee",
   },
+  {
+    committeePicture: commitee19,
+    commiteName: "Hanshi GM Ray Torres",
+    description: "founder of the Torres Hei Long System",
+  }
 ];
 
 //Products

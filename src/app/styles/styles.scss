@@ -458,6 +458,15 @@
                 max-width: 300px;
                 text-align: center;
                 border-radius: 5px;
+                
+                &_picture-container {
+                    overflow: hidden;
+                    &_committeePicture:hover {
+                        transition: ease 0.5s all;
+                        transform: scale(1.4);
+                    }
+                }
+
                 &_description {
                     margin-top: 30px;
                 }

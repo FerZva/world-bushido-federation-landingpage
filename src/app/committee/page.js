@@ -24,11 +24,14 @@ const page = () => {
             const { committeePicture, commiteName, description } = committee;
             return (
               <div key={index} className="container_committee-container_committee_card">
-                <Image
-                  src={committeePicture}
-                  width={300}
-                  height={300}
-                />
+                <div className="container_committee-container_committee_card_picture-container">
+                  <Image
+                    src={committeePicture}
+                    width={300}
+                    height={300}
+                    className="container_committee-container_committee_card_picture-container_committeePicture"
+                  />
+                </div>
                 <div className="container_committee-container_committee_card_description">
                   <h3>{commiteName}</h3>
                   <p>{description}</p>

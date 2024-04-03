@@ -42,7 +42,7 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Membership",
-                      productPrice: "75",
+                      productPrice: "77.25",
                       description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide."
                     },
                   }}
@@ -64,7 +64,7 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Instructor Certificate",
-                      productPrice: "750",
+                      productPrice: "772.5",
                       description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training."
                     },
                   }}
@@ -83,8 +83,8 @@ function memberships() {
                   href={{
                     pathname: "/cart",
                     query: {
-                      productName: "ID CARD WBF",
-                      productPrice: "250",
+                      productName: "ID CARD WBF", 
+                      productPrice: "257.5",
                       description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training"
                     },
                   }}

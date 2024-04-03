@@ -45,16 +45,16 @@ import Shield21 from '../assets/21-150x150.png'
 
 //Disciplines
 export const  Disciplines = [
-  { karate: "Karate" },
-  { taekwondo: "Taekwondo" },
-  { Judo: "Judo" },
-  { Boxeo: "Boxeo" },
-  { KickBoxing: "Kick Boxing" },
-  { mma: "MMA" },
-  { KravMaga: "Krav Maga" },
-  { MuayThai: "Muay Thai" },
-  { JiuJitsuBrasileño: "Jiu-Jitsu Brasileño" },
-  { KeysiFightingMethod: "Keysi Fighting Method" },
+  { discipline: "Karate" },
+  { discipline: "Taekwondo" },
+  { discipline: "Judo" },
+  { discipline: "Boxeo" },
+  { discipline: "Kick Boxing" },
+  { discipline: "MMA" },
+  { discipline: "Krav Maga" },
+  { discipline: "Muay Thai" },
+  { discipline: "Jiu-Jitsu Brasileño" },
+  { discipline: "Keysi Fighting Method" },
 ];
 
 //Committee

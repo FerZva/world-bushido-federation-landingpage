@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import bushidoLogo from './assets/WORLD-BUSHIDO.png'
+import bushidoBanner from "./assets/WORLD-BUSHIDO-BANNER.png.jpg";
 import bushidoPoster from './assets/WORLD-BUSHIDO.png'
 import warriorIcon from './assets/martial-arts.png'
 import growIcon from './assets/karate.png'
@@ -23,6 +24,7 @@ import './styles/styles.scss';
 import Footer from './components/Footer';
 
 export default function Home() {
+  const data = Disciplines;
   
   const [width, setWidth] = useState(0)
   const carousel = useRef();
@@ -104,24 +106,25 @@ export default function Home() {
            transition={{ duration: 0.5 }} 
           >
             <Image
-              src={bushidoLogo}
+              src={bushidoBanner}
               className="container_introduction-container_logo_image"
-              width={400}
-              height={400}
+              width={600}
+              height={600}
             />
           </motion.div>
         </motion.main>
 
         {/* <section className="container_disciplines-section">
           <div className="container_disciplines-section_discipline-container">
-            {Disciplines.map((disciplines, index) => {
-              const { disciplinesName } = disciplines
+            {data.map((disciplines, index) => {
+              const { discipline } = disciplines
               return (
-                <div key={index}>
+                <div >
                     <div
+                      key={index}
                       className="container_disciplines-section_discipline-container_discipline-name"
                     >
-                      {disciplinesName}
+                      {discipline}
                     </div>
                 </div>
               );

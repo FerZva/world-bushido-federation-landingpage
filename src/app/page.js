@@ -94,6 +94,15 @@ export default function Home() {
               to create a big family with the same beliefs, and the aplication of
               Warriors Code.
             </p>
+            {/* <button onClick={async () => {
+              const res = await fetch("/api/Emails", {
+                method: 'POST',
+              });
+              const data = await res.json()
+              console.log(data)
+            }}>
+              Send Email
+            </button> */}
             <br />
             <p className="container_introduction-container_description_CEO">Hanshi Jorge Borjas</p>
             <p className="container_introduction-container_description_CEO-position">CEO & FOUNDER WBF</p>

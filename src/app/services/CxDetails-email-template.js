@@ -1,15 +1,11 @@
-import React from 'react';
-
-const CxDetailsemailtemplate = ({ firstName, lastName, customerEmail, category, age, subscriptionType, purchaseDate }) => (
+const EmailTemplate = ({ firstName }) => (
   <div>
-    <h1>Customer purchase details</h1>
-    <p>Customer name: <strong>{firstName} {lastName}</strong></p>
-    <p>Customer email: {customerEmail}</p>
-    <p>Customer category: <strong>{category}</strong></p>
-    <p>Customer age: <strong>{age}</strong></p>
-    <p>Subscription type: <strong>{subscriptionType}</strong></p>
-    <p>Purchase Date: <strong>{purchaseDate}</strong></p>
+    <h1>Welcome, {firstName}!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, at.</p>
+    <button>
+      <a href="https://www.google.com">Click me</a>
+    </button>
   </div>
 );
 
-export default CxDetailsemailtemplate;
+export default EmailTemplate;

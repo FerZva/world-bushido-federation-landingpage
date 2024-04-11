@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/styles.scss'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
-import { SendEmail } from '../api/emails/sendEmail'
+import sendEmail from '../api/emails/sendEmail';
 
 function Page({ searchParams }) {
  

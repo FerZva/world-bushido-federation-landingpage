@@ -14,6 +14,7 @@ function Page({ searchParams }) {
 
       <section className='container_checkout-container'>
         <div className='container_checkout-container_products-cart-container'>
+          
           <h2 className='container_checkout-container_products-cart-container_title'>Your shopping cart</h2>
           {/* Mapear los productos en la colección */}
             <div className='container_checkout-container_products-cart-container_items-container'>
@@ -27,31 +28,49 @@ function Page({ searchParams }) {
         <div className='container_checkout-container_payment-method-container'>
           <div className='container_checkout-container_payment-method-container_customerInformation'>
             <form action={async (formData) => {
-              await SendEmail(formData);
+              await sendEmail(formData);
             }}>
+              <h3>Step 1</h3>
               <h2 className='container_checkout-container_payment-method-container_customerInformation_title'>Tell us about yourself</h2>
               <input 
                 type="text"
-                placeholder='First Name' 
+                name='firstName'
+                placeholder='First Name'
+                required 
                 className='container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputname'/>
               <input 
                 type="text" 
+                name='lastName'
                 placeholder='Last Name' 
+                required
                 className='container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputname'/>
               <input 
-                type="email" 
+                type="email"
+                name='senderEmail' 
                 placeholder='Email' 
+                required
                 className='container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputemail'/>
               <input 
                 type="text" 
-                placeholder='What is your age' 
+                name='age'
+                placeholder='How old are you?' 
+                required
                 className='container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputage'/>
               <input 
                 type="text" 
-                placeholder='What is your current rank in the martial arts?' 
+                placeholder='What is your current rank in the martial arts?'
+                name='rank' 
+                required
                 className='container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputrank'/>
+                <button
+                type='submit'
+                className='container_checkout-container_payment-method-container_customerInformation_button'
+                >
+                  submit info
+                </button>
             </form>
           </div>
+          <h3>Step 2</h3>
           <PayPalScriptProvider
           options={{clientId: "Ad4TxMZhXM-A2adm1IMaZwbKDsdgHUD_MqO5pgdUXtf3R9oSedAWY5ByATwHvK2uBhV4ycCOKPeYAGY4"}}
           >

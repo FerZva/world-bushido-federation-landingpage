@@ -89,7 +89,7 @@ function Page({ searchParams }) {
           style={{ display: divValue === 2 ? 'block' : 'none' }}
           >  
           <PayPalScriptProvider
-          options={{clientId: "Ad4TxMZhXM-A2adm1IMaZwbKDsdgHUD_MqO5pgdUXtf3R9oSedAWY5ByATwHvK2uBhV4ycCOKPeYAGY4"}}
+          options={{clientId: "AeRwLnK1GJC9dC23rxdWmtpNeL7rimwW-37sOwr9a3y0hPZWlYJjMQVFo9jwy5kbObRW1_tBmP5ViyN1"}}
           >
             <PayPalButtons 
                 createOrder={async () => {

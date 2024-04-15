@@ -24,7 +24,7 @@ export const sendEmail = async(formData) => {
 
     resend.emails.send({
         from: 'onboarding@resend.dev',
-        to: 'federationworldbushido@gmail.com',
+        to: 'fernandzva2019@outlook.es',
         subject: 'message from contact form',
         text: emailContent
     })

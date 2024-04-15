@@ -1,13 +1,23 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/styles.scss'
+import Link from "next/link";
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 import { sendEmail } from '../api/send/sendEmail';
+import Image from "next/image";
+
 
 function Page({ searchParams }) {
- 
+  const [divValue, setDivValue] = useState(1);
+  const [paymentApproved, setPaymentApproved] = useState(false);
+
+
+  const handledivValue = (value) => {
+     setDivValue(value)
+  }
+
   return (
     <div className='container'>
       <Header />
@@ -26,7 +36,10 @@ function Page({ searchParams }) {
         </div>
 
         <div className='container_checkout-container_payment-method-container'>
-          <div className='container_checkout-container_payment-method-container_customerInformation'>
+          <div 
+            className='container_checkout-container_payment-method-container_customerInformation'
+            style={{ display: divValue === 1 ? 'block' : 'none' }}
+          >
             <form action={async (formData) => {
               await sendEmail(formData);
             }}>
@@ -65,30 +78,43 @@ function Page({ searchParams }) {
                 <button
                 type='submit'
                 className='container_checkout-container_payment-method-container_customerInformation_button'
+                onClick={() => handledivValue(2)}
                 >
                   submit info
                 </button>
             </form>
           </div>
           <h3>Step 2</h3>
+          <div
+          style={{ display: divValue === 2 ? 'block' : 'none' }}
+          >  
           <PayPalScriptProvider
           options={{clientId: "Ad4TxMZhXM-A2adm1IMaZwbKDsdgHUD_MqO5pgdUXtf3R9oSedAWY5ByATwHvK2uBhV4ycCOKPeYAGY4"}}
           >
             <PayPalButtons 
                 createOrder={async () => {
-                const res = await fetch('/api/checkout', {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify({
-                    productName: searchParams.productName,
-                    productPrice: searchParams.productPrice
-                  })
-                })
-                const order = await res.json()
-                console.log(order)
-                return order.id
+                try {
+                  const res = await fetch('/api/checkout', {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                      productName: searchParams.productName,
+                      productPrice: searchParams.productPrice
+                    })
+                  });
+
+                  if (!res.ok) {
+                    throw new Error(`HTTP error! Status: ${res.status}`);
+                  }
+                  const order = await res.json()
+                  console.log(order)
+                  return order.id
+                } catch (error) {
+                  console.error('Error fetching or parsing order:', error);
+                  return null; 
+                }
                 }}
                 onApprove={(data, actions) => {
                   console.log(data);
@@ -100,7 +126,15 @@ function Page({ searchParams }) {
 
             />
           </PayPalScriptProvider>
-          
+
+            {paymentApproved && (
+        <div>
+          <h2>Thanks for join us!</h2>
+          <p>Here there is the rules of our World Bushido Academy</p>
+          <button><Link href={"https://drive.google.com/file/d/1o3SyDH1TQ9ImK1NlHbcT7E6ZixVxYsj6/view?usp=drive_link"}>Download the WBF Rules</Link></button>
+        </div>
+      )}
+          </div>
         </div>
       </section>
 

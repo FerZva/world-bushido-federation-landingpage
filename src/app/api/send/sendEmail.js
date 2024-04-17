@@ -13,6 +13,7 @@ export const sendEmail = async(formData) => {
     const firstName = formData.get('firstName');
     const lastName = formData.get('lastName');
     const rank = formData.get('rank');
+    const experience = formData.get('experience');
 
     const emailContent = `
         Hello there is a new customer suscribed with the following details
@@ -20,6 +21,7 @@ export const sendEmail = async(formData) => {
         Age: ${age}
         Email: ${senderEmail}
         Rank: ${rank}
+        Experience: ${experience}
     `;
 
     resend.emails.send({

@@ -75,6 +75,12 @@ function Page({ searchParams }) {
                 name='rank' 
                 required
                 className='container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputrank'/>
+                <input 
+                type="text" 
+                placeholder='How long have you been training?'
+                name='experience' 
+                required
+                className='container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputrank'/>
                 <button
                 type='submit'
                 className='container_checkout-container_payment-method-container_customerInformation_button'

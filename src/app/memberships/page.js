@@ -111,7 +111,7 @@ function memberships() {
                       pathname: "/cart",
                       query: {
                         productName: "Investment", 
-                        productPrice: "750",
+                        productPrice: "772.50",
                         description: "You will receive a confirmation on your email to complete the information of your investment"
                       },
                     }}
@@ -127,7 +127,7 @@ function memberships() {
                       pathname: "/cart",
                       query: {
                         productName: "Investment", 
-                        productPrice: "1000",
+                        productPrice: "1030",
                         description: "You will receive a confirmation on your email to complete the information of your investment"
                       },
                     }}
@@ -143,7 +143,7 @@ function memberships() {
                       pathname: "/cart",
                       query: {
                         productName: "Investment", 
-                        productPrice: "1500",
+                        productPrice: "1545",
                         description: "You will receive a confirmation on your email to complete the information of your investment"
                       },
                     }}
@@ -159,7 +159,7 @@ function memberships() {
                       pathname: "/cart",
                       query: {
                         productName: "Investment", 
-                        productPrice: "2000",
+                        productPrice: "2060",
                         description: "You will receive a confirmation on your email to complete the information of your investment"
                       },
                     }}
@@ -175,7 +175,7 @@ function memberships() {
                       pathname: "/cart",
                       query: {
                         productName: "Investment", 
-                        productPrice: "2500",
+                        productPrice: "2575",
                         description: "You will receive a confirmation on your email to complete the information of your investment"
                       },
                     }}
@@ -191,7 +191,7 @@ function memberships() {
                       pathname: "/cart",
                       query: {
                         productName: "Investment", 
-                        productPrice: "300",
+                        productPrice: "3090",
                         description: "You will receive a confirmation on your email to complete the information of your investment"
                       },
                     }}

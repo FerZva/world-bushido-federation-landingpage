@@ -441,7 +441,7 @@
     //Committee Page Styles
     &_committee-container {
         width: 100%;
-        min-height: 100vh;
+        min-height: 100%;
 
         &_description {
             text-align: center;
@@ -557,6 +557,7 @@
                     }
 
                     button {
+                        min-width: 80px;
                         font-size: 12px;
                         font-weight: bold;
                     }

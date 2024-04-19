@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Image from 'next/image';
 import CertificateImg from '../assets/Certificate.jpg';
 import Link from 'next/link';
+import { AiOutlineStock } from "react-icons/ai";
 
 import '../styles/styles.scss'
 
@@ -94,6 +95,111 @@ function memberships() {
             </div>
           </div>
 
+        </div>
+        {/* Investment sections */}
+        <div className='container_membershippage-container_products-container'>
+          <div className='container_membershippage-container_products-container_title'>
+            <h2 className='container_membershippage-container_products-container_title_text'>Join to World Bushido Federation and start to investing</h2>
+            <p className='container_membershippage-container_products-container_title_text'>Invest in our company to join an experienced and growing team committed to innovation and long-term success.</p>
+          </div>
+          <div className='container_membershippage-container_products-container_investcard-container'>
+              <div className='container_membershippage-container_products-container_investcard-container_card'>
+                  <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
+                  <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$750 Investment</h3>
+                  <Link
+                    href={{
+                      pathname: "/cart",
+                      query: {
+                        productName: "Investment", 
+                        productPrice: "750",
+                        description: "You will receive a confirmation on your email to complete the information of your investment"
+                      },
+                    }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link>
+              </div>
+              <div className='container_membershippage-container_products-container_investcard-container_card'>
+                  <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
+                  <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$1000 Investment</h3>
+                   <Link
+                    href={{
+                      pathname: "/cart",
+                      query: {
+                        productName: "Investment", 
+                        productPrice: "1000",
+                        description: "You will receive a confirmation on your email to complete the information of your investment"
+                      },
+                    }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link>
+              </div>
+              <div className='container_membershippage-container_products-container_investcard-container_card'>
+                  <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
+                  <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$1500 Investment</h3>
+                   <Link
+                    href={{
+                      pathname: "/cart",
+                      query: {
+                        productName: "Investment", 
+                        productPrice: "1500",
+                        description: "You will receive a confirmation on your email to complete the information of your investment"
+                      },
+                    }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link>
+              </div>
+              <div className='container_membershippage-container_products-container_investcard-container_card'>
+                  <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
+                  <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$2000 Investment</h3>
+                   <Link
+                    href={{
+                      pathname: "/cart",
+                      query: {
+                        productName: "Investment", 
+                        productPrice: "2000",
+                        description: "You will receive a confirmation on your email to complete the information of your investment"
+                      },
+                    }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link>
+              </div>
+              <div className='container_membershippage-container_products-container_investcard-container_card'>
+                  <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
+                  <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$2500 Investment</h3>
+                   <Link
+                    href={{
+                      pathname: "/cart",
+                      query: {
+                        productName: "Investment", 
+                        productPrice: "2500",
+                        description: "You will receive a confirmation on your email to complete the information of your investment"
+                      },
+                    }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link>
+              </div>
+              <div className='container_membershippage-container_products-container_investcard-container_card'>
+                  <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
+                  <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$3000 Investment</h3>
+                   <Link
+                    href={{
+                      pathname: "/cart",
+                      query: {
+                        productName: "Investment", 
+                        productPrice: "300",
+                        description: "You will receive a confirmation on your email to complete the information of your investment"
+                      },
+                    }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link>
+              </div>
+          </div>
         </div>
         {/* */}
         <div className='container_membershippage-container_certificate-container'>

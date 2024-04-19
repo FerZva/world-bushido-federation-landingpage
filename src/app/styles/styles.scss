@@ -486,6 +486,14 @@
             min-height: 100vh;
             align-items: center;
 
+            &_title {
+                text-align: center;
+
+                &_text {
+                    margin-bottom: 20px;
+                }
+            }
+
             &_card-container {
                 display: flex;
                 flex-direction: row;
@@ -509,6 +517,48 @@
 
                     &_label {
                         color: rgb(177, 177, 177);
+                    }
+
+                }
+            }
+
+            &_investcard-container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                &_card {
+                    padding: 15px;
+                    margin: 15px;
+                    background-color: hsla(200,16%,17%,1);
+                    width: 250px;
+
+                    &_title {
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 10px;
+
+                        &_icon {
+                            font-size: 25px;
+                            color: #a3a3a3;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            margin-left: 5px;
+                            color: #a3a3a3;
+                            font-weight: bold;
+                        }
+                    }
+
+                    &_price {
+                        margin-bottom: 10px;
+                    }
+
+                    button {
+                        font-size: 12px;
+                        font-weight: bold;
                     }
                 }
             }

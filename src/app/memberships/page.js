@@ -103,6 +103,22 @@ function memberships() {
             <p className='container_membershippage-container_products-container_title_text'>Invest in our company to join an experienced and growing team committed to innovation and long-term success.</p>
           </div>
           <div className='container_membershippage-container_products-container_investcard-container'>
+          <div className='container_membershippage-container_products-container_investcard-container_card'>
+                  <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
+                  <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$500 Investment</h3>
+                  <Link
+                    href={{
+                      pathname: "/cart",
+                      query: {
+                        productName: "Investment", 
+                        productPrice: "515",
+                        description: "You will receive a confirmation on your email to complete the information of your investment"
+                      },
+                    }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link>
+              </div>
               <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$750 Investment</h3>

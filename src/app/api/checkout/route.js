@@ -1,8 +1,8 @@
 import paypal from '@paypal/checkout-server-sdk';
 import { NextResponse } from 'next/server';
 
-const clientId = "AeRwLnK1GJC9dC23rxdWmtpNeL7rimwW-37sOwr9a3y0hPZWlYJjMQVFo9jwy5kbObRW1_tBmP5ViyN1";
-const clientSecret = "EHYX3BnElKgjbQP9fraEDVWMT4T6PV-6fNh0kPmY1L8CTviOPz5B11n4ttsq2fESj1mr_3gEWhbY1EE4";
+const clientId = "AdR40D-YswNpwiDORIDqz25sQlSukKs_b00XJhQnUsK5cqVK0xnjO2WCaPqg6glniL6RwyQEToSIDGIy";
+const clientSecret = "AdR40D-YswNpwiDORIDqz25sQlSukKs_b00XJhQnUsK5cqVK0xnjO2WCaPqg6glniL6RwyQEToSIDGIy";
 
 const enviroment = new paypal.core.LiveEnvironment(clientId, clientSecret)
 

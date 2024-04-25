@@ -95,7 +95,7 @@ function Page({ searchParams }) {
           style={{ display: divValue === 2 ? 'block' : 'none' }}
           >  
           <PayPalScriptProvider
-          options={{clientId: "AeRwLnK1GJC9dC23rxdWmtpNeL7rimwW-37sOwr9a3y0hPZWlYJjMQVFo9jwy5kbObRW1_tBmP5ViyN1"}}
+          options={{clientId: "AdR40D-YswNpwiDORIDqz25sQlSukKs_b00XJhQnUsK5cqVK0xnjO2WCaPqg6glniL6RwyQEToSIDGIy"}}
           >
             <PayPalButtons 
                 createOrder={async () => {

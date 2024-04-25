@@ -2,7 +2,7 @@ import paypal from '@paypal/checkout-server-sdk';
 import { NextResponse } from 'next/server';
 
 const clientId = "AdR40D-YswNpwiDORIDqz25sQlSukKs_b00XJhQnUsK5cqVK0xnjO2WCaPqg6glniL6RwyQEToSIDGIy";
-const clientSecret = "AdR40D-YswNpwiDORIDqz25sQlSukKs_b00XJhQnUsK5cqVK0xnjO2WCaPqg6glniL6RwyQEToSIDGIy";
+const clientSecret = "EEayO7_PS3owbwkn3qqStG2rcJqL9XbpH9tYXI-Mn6c8uV6wXRw6Hen5BxJZZc2M-_aIuklc-UKUStE2";
 
 const enviroment = new paypal.core.LiveEnvironment(clientId, clientSecret)
 

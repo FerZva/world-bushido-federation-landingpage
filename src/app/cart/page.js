@@ -90,7 +90,7 @@ function Page({ searchParams }) {
                 </button>
             </form>
           </div>
-          {/* <h3>Step 2</h3> */}
+          <h3>You are about to join the largest martial arts federation</h3>
           <div
           style={{ display: divValue === 2 ? 'block' : 'none' }}
           >  

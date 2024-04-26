@@ -10,7 +10,7 @@ import Image from "next/image";
 
 
 function Page({ searchParams }) {
-  const [divValue, setDivValue] = useState(1);
+  const [divValue, setDivValue] = useState(2);
   const [paymentApproved, setPaymentApproved] = useState(false);
 
 

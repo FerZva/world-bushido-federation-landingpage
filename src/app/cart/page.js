@@ -90,7 +90,7 @@ function Page({ searchParams }) {
                 </button>
             </form>
           </div>
-          <h3>You are about to join the largest martial arts federation</h3>
+          <h3>You are about to join the largest</h3> <br /><h3>martial arts federation</h3>br
           <div
           style={{ display: divValue === 2 ? 'block' : 'none' }}
           >  

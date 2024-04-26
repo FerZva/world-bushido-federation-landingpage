@@ -43,7 +43,7 @@ function Page({ searchParams }) {
             <form action={async (formData) => {
               await sendEmail(formData);
             }}>
-              <h3>Step 1</h3>
+              {/* <h3>Step 1</h3> */}
               <h2 className='container_checkout-container_payment-method-container_customerInformation_title'>Tell us about yourself</h2>
               <input 
                 type="text"
@@ -90,7 +90,7 @@ function Page({ searchParams }) {
                 </button>
             </form>
           </div>
-          <h3>Step 2</h3>
+          {/* <h3>Step 2</h3> */}
           <div
           style={{ display: divValue === 2 ? 'block' : 'none' }}
           >  

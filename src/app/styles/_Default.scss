@@ -53,3 +53,10 @@ Image {
 p{
     font-size: 20px;
 }
+
+.title-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}

@@ -37,7 +37,7 @@ function memberships() {
                 <p className="container_membershippage-container_products-container_card-container_card_description">
                   Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.
                 </p>
-                
+{/*                 
                 <Link
                   href={{
                     pathname: "/cart",
@@ -49,7 +49,13 @@ function memberships() {
                   }}
                 >
                   <button>Join Now</button>
-                </Link>
+                </Link> */}
+                <Link
+                    href="https://buy.stripe.com/28o3cH7Pa8XranS5kt"
+                    target="_self"
+                  >
+                    <button>Join Now</button>
+                  </Link>
             </div>
 
             <div className="container_membershippage-container_products-container_card-container_card">
@@ -60,7 +66,7 @@ function memberships() {
                 <p className="container_membershippage-container_products-container_card-container_card_description">
                   Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training.
                 </p>
-                <Link
+                {/* <Link
                   href={{
                     pathname: "/cart",
                     query: {
@@ -71,7 +77,13 @@ function memberships() {
                   }}
                 >
                   <button>Join Now</button>
-                </Link>
+                </Link> */}
+                <Link
+                    href="https://buy.stripe.com/4gw6oTedy0qV9jObIQ"
+                    target="_self"
+                  >
+                    <button>Join Now</button>
+                  </Link>
             </div>
 
             <div className="container_membershippage-container_products-container_card-container_card">
@@ -80,7 +92,7 @@ function memberships() {
                 <p className="container_membershippage-container_products-container_card-container_card_description">
                   Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training
                 </p>
-                <Link
+                {/* <Link
                   href={{
                     pathname: "/cart",
                     query: {
@@ -91,7 +103,13 @@ function memberships() {
                   }}
                 >
                   <button>Join Now</button>
-                </Link>
+                </Link> */}
+                <Link
+                    href="https://buy.stripe.com/8wM28D7Pa5LfdA48wG"
+                    target="_self"
+                  >
+                    <button>Join Now</button>
+                  </Link>
             </div>
           </div>
 

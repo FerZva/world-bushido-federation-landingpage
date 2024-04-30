@@ -51,7 +51,7 @@ function memberships() {
                   <button>Join Now</button>
                 </Link> */}
                 <Link
-                    href="https://buy.stripe.com/28o3cH7Pa8XranS5kt"
+                    href="https://buy.stripe.com/bIY8x1edyflP8fK5kw"
                     target="_self"
                   >
                     <button>Join Now</button>
@@ -79,7 +79,7 @@ function memberships() {
                   <button>Join Now</button>
                 </Link> */}
                 <Link
-                    href="https://buy.stripe.com/4gw6oTedy0qV9jObIQ"
+                    href="https://buy.stripe.com/7sI9B5glGehL53y5kx"
                     target="_self"
                   >
                     <button>Join Now</button>
@@ -105,7 +105,7 @@ function memberships() {
                   <button>Join Now</button>
                 </Link> */}
                 <Link
-                    href="https://buy.stripe.com/8wM28D7Pa5LfdA48wG"
+                    href="https://buy.stripe.com/6oEcNh0mI3D7brWdR4"
                     target="_self"
                   >
                     <button>Join Now</button>
@@ -137,7 +137,7 @@ function memberships() {
                     <button>Buy Stock</button>
                   </Link> */}
                   <Link
-                    href="https://buy.stripe.com/9AQcNhc5q1uZcw09AB"
+                    href="https://buy.stripe.com/cN214z1qM4HbbrW5kz"
                     target="_self"
                   >
                     <button>Buy Stock</button>
@@ -159,7 +159,7 @@ function memberships() {
                     <button>Buy Stock</button>
                   </Link> */}
                   <Link
-                    href="https://buy.stripe.com/14k3cHd9u6Pj9jO28a"
+                    href="https://buy.stripe.com/5kAaF94CY2z3anS7sI"
                     target="_self"
                   >
                     <button>Buy Stock</button>
@@ -181,7 +181,7 @@ function memberships() {
                     <button>Buy Stock</button>
                   </Link> */}
                   <Link
-                    href="https://buy.stripe.com/aEU4gLc5qgpT67C7sv"
+                    href="https://buy.stripe.com/dR64gL8TeflPbrW7sJ"
                     target="_self"
                   >
                     <button>Buy Stock</button>
@@ -203,7 +203,7 @@ function memberships() {
                     <button>Buy Stock</button>
                   </Link> */}
                   <Link
-                    href="https://buy.stripe.com/dR600v6L6flP7bG148"
+                    href="https://buy.stripe.com/6oEeVp2uQgpT67C3cu"
                     target="_self"
                   >
                     <button>Buy Stock</button>
@@ -225,7 +225,7 @@ function memberships() {
                     <button>Buy Stock</button>
                   </Link> */}
                    <Link
-                    href="https://buy.stripe.com/4gw4gL7Pa7Tn2VqfZ3"
+                    href="https://buy.stripe.com/4gw28D3yU8Xr0Ni14n"
                     target="_self"
                   >
                     <button>Buy Stock</button>
@@ -247,7 +247,7 @@ function memberships() {
                     <button>Buy Stock</button>
                   </Link> */}
                   <Link
-                    href="https://buy.stripe.com/fZe5kP1qMflP2Vq3ci"
+                    href="https://buy.stripe.com/fZe00vglG0qV7bG00k"
                     target="_self"
                   >
                     <button>Buy Stock</button>
@@ -269,7 +269,7 @@ function memberships() {
                     <button>Buy Stock</button>
                   </Link> */}
                    <Link
-                    href="https://buy.stripe.com/7sI3cH2uQ0qV8fK14b"
+                    href="https://buy.stripe.com/8wM8x16L65LfbrWaEZ"
                     target="_self"
                   >
                     <button>Buy Stock</button>

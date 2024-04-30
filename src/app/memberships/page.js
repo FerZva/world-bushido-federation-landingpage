@@ -106,7 +106,7 @@ function memberships() {
           <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$500 Investment</h3>
-                  <Link
+                  {/* <Link
                     href={{
                       pathname: "/cart",
                       query: {
@@ -117,12 +117,18 @@ function memberships() {
                     }}
                   >
                     <button>Buy Stock</button>
+                  </Link> */}
+                  <Link
+                    href="https://buy.stripe.com/9AQcNhc5q1uZcw09AB"
+                    target="_self"
+                  >
+                    <button>Buy Stock</button>
                   </Link>
               </div>
               <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$750 Investment</h3>
-                  <Link
+                  {/* <Link
                     href={{
                       pathname: "/cart",
                       query: {
@@ -133,12 +139,18 @@ function memberships() {
                     }}
                   >
                     <button>Buy Stock</button>
+                  </Link> */}
+                  <Link
+                    href="https://buy.stripe.com/14k3cHd9u6Pj9jO28a"
+                    target="_self"
+                  >
+                    <button>Buy Stock</button>
                   </Link>
               </div>
               <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$1000 Investment</h3>
-                   <Link
+                   {/* <Link
                     href={{
                       pathname: "/cart",
                       query: {
@@ -149,12 +161,18 @@ function memberships() {
                     }}
                   >
                     <button>Buy Stock</button>
+                  </Link> */}
+                  <Link
+                    href="https://buy.stripe.com/aEU4gLc5qgpT67C7sv"
+                    target="_self"
+                  >
+                    <button>Buy Stock</button>
                   </Link>
               </div>
               <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$1500 Investment</h3>
-                   <Link
+                   {/* <Link
                     href={{
                       pathname: "/cart",
                       query: {
@@ -165,12 +183,18 @@ function memberships() {
                     }}
                   >
                     <button>Buy Stock</button>
+                  </Link> */}
+                  <Link
+                    href="https://buy.stripe.com/dR600v6L6flP7bG148"
+                    target="_self"
+                  >
+                    <button>Buy Stock</button>
                   </Link>
               </div>
               <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$2000 Investment</h3>
-                   <Link
+                   {/* <Link
                     href={{
                       pathname: "/cart",
                       query: {
@@ -181,12 +205,18 @@ function memberships() {
                     }}
                   >
                     <button>Buy Stock</button>
+                  </Link> */}
+                   <Link
+                    href="https://buy.stripe.com/4gw4gL7Pa7Tn2VqfZ3"
+                    target="_self"
+                  >
+                    <button>Buy Stock</button>
                   </Link>
               </div>
               <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock  className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$2500 Investment</h3>
-                   <Link
+                   {/* <Link
                     href={{
                       pathname: "/cart",
                       query: {
@@ -197,12 +227,18 @@ function memberships() {
                     }}
                   >
                     <button>Buy Stock</button>
+                  </Link> */}
+                  <Link
+                    href="https://buy.stripe.com/fZe5kP1qMflP2Vq3ci"
+                    target="_self"
+                  >
+                    <button>Buy Stock</button>
                   </Link>
               </div>
               <div className='container_membershippage-container_products-container_investcard-container_card'>
                   <div className='container_membershippage-container_products-container_investcard-container_card_title'><AiOutlineStock className='container_membershippage-container_products-container_investcard-container_card_title_icon'/> <p>stock price</p></div>
                   <h3 className='container_membershippage-container_products-container_investcard-container_card_price'>$3000 Investment</h3>
-                   <Link
+                   {/* <Link
                     href={{
                       pathname: "/cart",
                       query: {
@@ -211,6 +247,12 @@ function memberships() {
                         description: "You will receive a confirmation on your email to complete the information of your investment"
                       },
                     }}
+                  >
+                    <button>Buy Stock</button>
+                  </Link> */}
+                   <Link
+                    href="https://buy.stripe.com/7sI3cH2uQ0qV8fK14b"
+                    target="_self"
                   >
                     <button>Buy Stock</button>
                   </Link>
@@ -238,7 +280,7 @@ function memberships() {
                 </p>
                 <br />
                 <p className='container_membershippage-container_certificate-container_description-container_description-container_paragraph'>
-                Program of Bushido Federation in the world
+                Program of Bushido Federation in the world,
                 Promotion and scientific and professional training of martial arts for those interested in martial sports by holding training classes, specialized seminars, advanced classes, coaching courses, holding professional and amateur competitions in all types of martial sports and in addition to awarding Official and valid certificates with the seal and signature of the great and famous professors of the world.
                 </p>
               </div>

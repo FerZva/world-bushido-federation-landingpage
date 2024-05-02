@@ -27,7 +27,7 @@ function page() {
           <div className="container_membershippage-container_products-container_card-container">
             <div className="container_membershippage-container_products-container_card-container_card">
               <h3 className="container_membershippage-container_products-container_card-container_card_title">
-                Membership
+                Membership as referred
               </h3>
               <h3 className="container_membershippage-container_products-container_card-container_card_price">
                 $75
@@ -51,7 +51,7 @@ function page() {
 
             <div className="container_membershippage-container_products-container_card-container_card">
               <h3 className="container_membershippage-container_products-container_card-container_card_title">
-                Instructor Certificate
+                Instructor Certificate as referred
               </h3>
               <h3 className="container_membershippage-container_products-container_card-container_card_price">
                 $750
@@ -75,7 +75,7 @@ function page() {
 
             <div className="container_membershippage-container_products-container_card-container_card">
               <h3 className="container_membershippage-container_products-container_card-container_card_title">
-                ID CARD WBF
+                ID CARD WBF as referred
               </h3>
               <h3 className="container_membershippage-container_products-container_card-container_card_price">
                 $250

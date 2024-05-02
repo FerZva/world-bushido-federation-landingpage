@@ -17,7 +17,9 @@ function page() {
       <div className="container_membershippage-container">
         <div className="container_membershippage-container_products-container">
           <div className="container_membershippage-container_products-container_description">
-            <h2>Memberships of World Bushido Federation x Silvio Simac UK</h2>
+            <h2 style={
+                divStyle
+            }>Memberships of World Bushido Federation x Silvio Simac UK</h2>
             <p style={
                 divStyle
             }>Select one option of these if you are referred from SILVIO SIMAC UK</p>
@@ -40,7 +42,7 @@ function page() {
                 title worldwide.
               </p>
               <Link
-                href="https://buy.stripe.com/bIY8x1edyflP8fK5kw"
+                href="https://buy.stripe.com/5kA3cH7Pa1uZ0NiaF1"
                 target="_self"
               >
                 <button>Join Now</button>
@@ -64,7 +66,7 @@ function page() {
                 affiliated with us, receive exclusive grand master training.
               </p>
               <Link
-                href="https://buy.stripe.com/7sI9B5glGehL53y5kx"
+                href="https://buy.stripe.com/5kAfZt5H2c9D3Zu4gE"
                 target="_self"
               >
                 <button>Join Now</button>
@@ -84,7 +86,7 @@ function page() {
                 affiliated with us, receive exclusive grand master training
               </p>
               <Link
-                href="https://buy.stripe.com/6oEcNh0mI3D7brWdR4"
+                href="https://buy.stripe.com/5kAeVpglG2z353y14t"
                 target="_self"
               >
                 <button>Join Now</button>

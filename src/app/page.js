@@ -1,6 +1,7 @@
 "use client";
 import Header from "./components/Header";
 import React, { useRef, useEffect, useState } from "react";
+import { useInView } from 'react-intersection-observer';
 import Link from "next/link";
 import Image from "next/image";
 import bushidoLogo from './assets/WORLD-BUSHIDO.png'
@@ -24,6 +25,7 @@ import './styles/styles.scss';
 import Footer from './components/Footer';
 
 export default function Home() {
+  
   const data = Disciplines;
   
   const [width, setWidth] = useState(0)
@@ -131,7 +133,7 @@ export default function Home() {
           </motion.div>
         </motion.main>
 
-        {/* <section className="container_disciplines-section">
+        <section className="container_disciplines-section">
           <div className="container_disciplines-section_discipline-container">
             {data.map((disciplines, index) => {
               const { discipline } = disciplines
@@ -147,7 +149,7 @@ export default function Home() {
               );
             })}
           </div>
-        </section>  */}
+        </section>
 
 <motion.section className="container_cardbenefits-container"
         ref={ref}

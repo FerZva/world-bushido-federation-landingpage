@@ -156,7 +156,7 @@
                 order: 2;
                 padding-top: 2.5rem;
                 padding-right: 2.5rem;
-                padding-bottom: 0;
+                padding-bottom: 30px;
                 padding-left: 2.5rem;
             }
         }
@@ -475,8 +475,34 @@
     }
 
     &_membershippage-container {
-        padding: 20px;
+        padding: 0px 20px;
         width: 100%;
+
+        &_refer-container {
+            width: 100%;
+            height: auto;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            &_title {
+                margin-bottom: 30px;
+            }
+            
+            &_image {
+                width: 400px;
+                height: 250px;
+                margin: auto;
+                filter: drop-shadow(12px 12px 12px rgba(255, 0, 0, 0.474));
+            }
+
+            &_button {
+                margin-top: 30px;
+                width: auto;
+            }
+        }
         
         &_products-container {
             display: flex;
@@ -485,6 +511,15 @@
             justify-content: center;
             min-height: 100vh;
             align-items: center;
+
+            &_description {
+                &_partnerlogo {
+                    &_image {
+                        width: 500px;
+                        height: 200px;
+                    }
+                }
+            }
 
             &_title {
                 text-align: center;

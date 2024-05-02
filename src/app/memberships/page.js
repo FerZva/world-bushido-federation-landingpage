@@ -1,16 +1,50 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Image from 'next/image';
 import CertificateImg from '../assets/Certificate.jpg';
 import Link from 'next/link';
 import { AiOutlineStock } from "react-icons/ai";
-import ReferPartnerLogo from '../assets/ReferSSLogo.png'
+import ReferPartnerLogoDesktop from '../assets/ReferSSLogo.png'
+import ReferPartnerLogoMobile from '../assets/ReferSSLogo mobile.png'
 import Button from '../../app/components/Button';
 import '../styles/styles.scss'
 
 function memberships() {
+  // Estado para almacenar el ancho actual de la ventana
+  const [windowWidth, setWindowWidth] = useState(null);
+
+  // Efecto para actualizar el ancho de la ventana
+  useEffect(() => {
+    // Función para actualizar el estado con el nuevo ancho de la ventana
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Configurar el listener para el evento resize
+    window.addEventListener('resize', handleResize);
+
+    // Llamar a handleResize para establecer el ancho inicial
+    handleResize();
+
+    // Limpiar el listener al desmontar el componente
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // Función que retorna el componente de imagen basado en el ancho de la ventana
+  const renderImage = () => {
+    if (windowWidth <= 850) {
+      // Si el ancho es menor o igual a 850px, mostrar imagen 2
+      return <Image className='container_membershippage-container_refer-container_image' src={ReferPartnerLogoMobile} alt="Image 2" width={500} height={500} />;
+    } else if (windowWidth > 850) {
+      // Si el ancho es mayor que 850px, mostrar imagen 1
+      return <Image className='container_membershippage-container_refer-container_image' src={ReferPartnerLogoDesktop} alt="Image 1" width={500} height={500} />;
+    }
+  };
+
 
   return (
     <div className='container'>
@@ -115,7 +149,7 @@ function memberships() {
           </div>
         <div className='container_membershippage-container_refer-container'>
               <h3 className='container_membershippage-container_refer-container_title'>Are you refer from Silvio Simac UK?</h3>
-              <Image className='container_membershippage-container_refer-container_image' src={ReferPartnerLogo}/>
+              {windowWidth && renderImage()}
               <button className='container_membershippage-container_refer-container_button'><Link className='container_membershippage-container_refer-container_button_link' href="/memberships/silviosimac">Continue here</Link></button>
         </div>
         </div>

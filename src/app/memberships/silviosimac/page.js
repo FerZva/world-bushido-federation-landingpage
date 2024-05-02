@@ -27,7 +27,7 @@ function page() {
           <div className="container_membershippage-container_products-container_card-container">
             <div className="container_membershippage-container_products-container_card-container_card">
               <h3 className="container_membershippage-container_products-container_card-container_card_title">
-                Membership as referred
+                Membership SS UK
               </h3>
               <h3 className="container_membershippage-container_products-container_card-container_card_price">
                 $75
@@ -51,7 +51,7 @@ function page() {
 
             <div className="container_membershippage-container_products-container_card-container_card">
               <h3 className="container_membershippage-container_products-container_card-container_card_title">
-                Instructor Certificate as referred
+                Instructor Certificate SS UK
               </h3>
               <h3 className="container_membershippage-container_products-container_card-container_card_price">
                 $750
@@ -75,7 +75,7 @@ function page() {
 
             <div className="container_membershippage-container_products-container_card-container_card">
               <h3 className="container_membershippage-container_products-container_card-container_card_title">
-                ID CARD WBF as referred
+                ID CARD WBF SS UK
               </h3>
               <h3 className="container_membershippage-container_products-container_card-container_card_price">
                 $250

@@ -7,7 +7,7 @@ import CertificateImg from '../assets/Certificate.jpg';
 import Link from 'next/link';
 import { AiOutlineStock } from "react-icons/ai";
 import ReferPartnerLogo from '../assets/ReferSSLogo.png'
-
+import Button from '../../app/components/Button';
 import '../styles/styles.scss'
 
 function memberships() {
@@ -116,7 +116,7 @@ function memberships() {
         <div className='container_membershippage-container_refer-container'>
               <h3 className='container_membershippage-container_refer-container_title'>Are you refer from Silvio Simac UK?</h3>
               <Image className='container_membershippage-container_refer-container_image' src={ReferPartnerLogo}/>
-              <button className='container_membershippage-container_refer-container_button'><Link href="/memberships/silviosimac">Continue here</Link></button>
+              <button className='container_membershippage-container_refer-container_button'><Link className='container_membershippage-container_refer-container_button_link' href="/memberships/silviosimac">Continue here</Link></button>
         </div>
         </div>
         {/* Investment sections */}

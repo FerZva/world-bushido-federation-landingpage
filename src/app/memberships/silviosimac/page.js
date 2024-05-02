@@ -7,6 +7,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 function page() {
+    const divStyle = {
+        textAlign: 'center' 
+      };
+
   return (
     <div className="container">
       <Header />
@@ -14,6 +18,9 @@ function page() {
         <div className="container_membershippage-container_products-container">
           <div className="container_membershippage-container_products-container_description">
             <h2>Memberships of World Bushido Federation x Silvio Simac UK</h2>
+            <p style={
+                divStyle
+            }>Select one option of these if you are referred from SILVIO SIMAC UK</p>
           </div>
           <div className="container_membershippage-container_products-container_card-container">
             <div className="container_membershippage-container_products-container_card-container_card">

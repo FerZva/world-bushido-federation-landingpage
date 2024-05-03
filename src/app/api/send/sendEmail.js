@@ -1,7 +1,7 @@
 "use server";
 import { Resend } from 'resend';
 
-const resend = new Resend('re_Bjf9Sn3B_EzNWCHGmUmo6d8H2NYap9qAn')
+const resend = new Resend('re_GGiVqEc4_2n2P9u2NMQLbqL2fqz1gVnYS')
 
 export const sendEmail = async(formData) => {
     console.log("Running on server");
@@ -28,7 +28,7 @@ export const sendEmail = async(formData) => {
 
     resend.emails.send({
         from: 'onboarding@resend.dev',
-        to: 'fernandzva2019@outlook.es',
+        to: 'federationworldbushido@gmail.com',
         subject: 'message from contact form',
         text: emailContent
     })

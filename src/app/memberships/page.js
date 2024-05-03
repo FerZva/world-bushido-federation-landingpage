@@ -101,7 +101,7 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Instructor Certificate",
-                      productPrice: "772.5",
+                      productPrice: "779.40",
                       description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training.",
                       redirecto: "https://buy.stripe.com/7sI9B5glGehL53y5kx"
                     },
@@ -128,7 +128,7 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "ID CARD WBF", 
-                      productPrice: "257.5",
+                      productPrice: "259.80",
                       description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training",
                       redirecto: "https://buy.stripe.com/6oEcNh0mI3D7brWdR4"
                     },

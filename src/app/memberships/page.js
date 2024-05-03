@@ -72,25 +72,20 @@ function memberships() {
                 <p className="container_membershippage-container_products-container_card-container_card_description">
                   Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.
                 </p>
-                {/*                 
+                                 
                 <Link
                   href={{
                     pathname: "/cart",
                     query: {
                       productName: "Membership",
-                      productPrice: "77.25",
-                      description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide."
+                      productPrice: "77.94",
+                      description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.",
+                      redirecto: "https://buy.stripe.com/bIY8x1edyflP8fK5kw"
                     },
                   }}
                 >
                   <button>Join Now</button>
-                </Link> */}
-                <Link
-                    href="https://buy.stripe.com/bIY8x1edyflP8fK5kw"
-                    target="_self"
-                  >
-                    <button>Join Now</button>
-                  </Link>
+                </Link>
             </div>
 
             <div className="container_membershippage-container_products-container_card-container_card">
@@ -101,24 +96,25 @@ function memberships() {
                 <p className="container_membershippage-container_products-container_card-container_card_description">
                   Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training.
                 </p>
-                {/* <Link
+                 <Link
                   href={{
                     pathname: "/cart",
                     query: {
                       productName: "Instructor Certificate",
                       productPrice: "772.5",
-                      description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training."
+                      description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training.",
+                      redirecto: "https://buy.stripe.com/7sI9B5glGehL53y5kx"
                     },
                   }}
                 >
                   <button>Join Now</button>
-                </Link> */}
-                <Link
+                </Link> 
+                {/* <Link
                     href="https://buy.stripe.com/7sI9B5glGehL53y5kx"
                     target="_self"
                   >
                     <button>Join Now</button>
-                  </Link>
+                  </Link> */}
             </div>
 
             <div className="container_membershippage-container_products-container_card-container_card">
@@ -127,31 +123,32 @@ function memberships() {
                 <p className="container_membershippage-container_products-container_card-container_card_description">
                   Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training
                 </p>
-                {/* <Link
+                <Link
                   href={{
                     pathname: "/cart",
                     query: {
                       productName: "ID CARD WBF", 
                       productPrice: "257.5",
-                      description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training"
+                      description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training",
+                      redirecto: "https://buy.stripe.com/6oEcNh0mI3D7brWdR4"
                     },
                   }}
                 >
                   <button>Join Now</button>
-                </Link> */}
-                <Link
+                </Link>
+                {/* <Link
                     href="https://buy.stripe.com/6oEcNh0mI3D7brWdR4"
                     target="_self"
                   >
                     <button>Join Now</button>
-                  </Link>
+                  </Link> */}
             </div>
           </div>
-        <div className='container_membershippage-container_refer-container'>
+        {/* <div className='container_membershippage-container_refer-container'>
               <h3 className='container_membershippage-container_refer-container_title'>Are you refer from Silvio Simac UK?</h3>
               {windowWidth && renderImage()}
               <button className='container_membershippage-container_refer-container_button'><Link className='container_membershippage-container_refer-container_button_link' href="/memberships/silviosimac">Continue here</Link></button>
-        </div>
+        </div> */}
         </div>
         {/* Investment sections */}
         <div className='container_membershippage-container_products-container'>

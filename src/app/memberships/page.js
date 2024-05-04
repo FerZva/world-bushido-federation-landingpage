@@ -87,6 +87,36 @@ function memberships() {
                   <button>Join Now</button>
                 </Link>
             </div>
+            
+              <div className="container_membershippage-container_products-container_card-container_card">
+                <h3 className="container_membershippage-container_products-container_card-container_card_title">
+                  Monthly Membership
+                </h3>
+                <h3 className="container_membershippage-container_products-container_card-container_card_price">
+                  $9.99
+                </h3>
+                <p className="container_membershippage-container_products-container_card-container_card_label">
+                  Per Month
+                </p>
+                
+                <p className="container_membershippage-container_products-container_card-container_card_description">
+                  Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.
+                </p>
+                                 
+                <Link
+                  href={{
+                    pathname: "/cart",
+                    query: {
+                      productName: "Monthly Membership",
+                      productPrice: "10.38",
+                      description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.",
+                      redirecto: "https://buy.stripe.com/dR68x13yUa1v9jOdRl"
+                    },
+                  }}
+                >
+                  <button>Join Now</button>
+                </Link>
+            </div>
 
             <div className="container_membershippage-container_products-container_card-container_card">
                 <h3 className="container_membershippage-container_products-container_card-container_card_title">Instructor Certificate</h3>

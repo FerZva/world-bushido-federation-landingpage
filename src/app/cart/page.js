@@ -153,14 +153,6 @@ function Page({ searchParams }) {
                 />
               )}
 
-              {/* <button
-                type='submit'
-                className='container_checkout-container_payment-method-container_customerInformation_button'
-                onClick={() => handledivValue(2)}
-                >
-                  Proceed to checkout
-                </button> */}
-
               <button
                 type="submit"
                 onClick={() => {

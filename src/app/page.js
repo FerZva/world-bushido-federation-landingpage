@@ -14,7 +14,7 @@ import communityIcon from './assets/respect.png'
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Shields, Disciplines } from './services/data'
 
-import committee1 from './assets/committee17.jpg'
+import committee1 from './assets/committee1.png'
 import committee2 from './assets/committee14.png'
 import committee3 from './assets/committee16.png'
 import committee4 from './assets/committee3.png'
@@ -97,22 +97,6 @@ export default function Home() {
               Warriors Code.
             </p>
 
-            {/* <button
-              onClick={async () => {
-                try {
-                  const res = await fetch("/api/emails/sendCustomerDetails", {
-                    method: "POST",
-                  });
-                  const data = await res.json();
-                  console.log(data);
-                } catch (error) {
-                  console.error("Error sending email:", error);
-                }
-              }}
-            >
-              Send Email
-            </button> */}
-
             <br />
             <p className="container_introduction-container_description_CEO">Hanshi Jorge Borjas</p>
             <p className="container_introduction-container_description_CEO-position">CEO & FOUNDER WBF</p>
@@ -125,7 +109,7 @@ export default function Home() {
            transition={{ duration: 0.5 }} 
           >
             <Image
-              src={bushidoBanner}
+              src={bushidoLogo}
               className="container_introduction-container_logo_image"
               width={600}
               height={600}
@@ -134,6 +118,9 @@ export default function Home() {
         </motion.main>
 
         <section className="container_disciplines-section">
+          <div className="container_disciplines-section_title">
+             <h2>Disciplines</h2>
+          </div>
           <div className="container_disciplines-section_discipline-container">
             {data.map((disciplines, index) => {
               const { discipline } = disciplines
@@ -260,14 +247,14 @@ export default function Home() {
                   htmlFor=""
                   className="container_commite-introduction_commitecard-container_card_description_name"
                 >
-                  Dr. Robert M. Goldman,
+                  Dr. Simon Kook,
                 </label>
 
                 <label
                   htmlFor=""
                   className="container_commite-introduction_commitecard-container_card_description_position"
                 >
-                  Board of Directors, MD, Ph.D. DO, ...
+                  Global General Secretary
                 </label>
               </div>
 

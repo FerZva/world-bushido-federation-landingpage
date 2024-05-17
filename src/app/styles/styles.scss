@@ -187,13 +187,23 @@
         width: 100%;
         padding: 0 60px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
+
+        &_title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
         @media screen and (max-width: 1200px) {                
             padding: 0; 
         }
 
+         
+
         &_discipline-container {
+            margin: auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

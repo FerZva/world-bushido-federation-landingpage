@@ -80,7 +80,7 @@ function memberships() {
                       productName: "Membership",
                       productPrice: "77.94",
                       description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.",
-                      redirecto: "https://buy.stripe.com/bIY8x1edyflP8fK5kw"
+                      redirecto: "https://buy.stripe.com/7sI01CgnBb4vawE145"
                     },
                   }}
                 >
@@ -110,7 +110,7 @@ function memberships() {
                       productName: "Monthly Membership",
                       productPrice: "10.38",
                       description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.",
-                      redirecto: "https://buy.stripe.com/dR68x13yUa1v9jOdRl"
+                      redirecto: "https://buy.stripe.com/fZebKkc7la0rfQY5km"
                     },
                   }}
                 >
@@ -133,7 +133,7 @@ function memberships() {
                       productName: "Instructor Certificate",
                       productPrice: "779.40",
                       description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training.",
-                      redirecto: "https://buy.stripe.com/7sI9B5glGehL53y5kx"
+                      redirecto: "https://buy.stripe.com/4gweWwb3hgoP7ks147"
                     },
                   }}
                 >
@@ -160,7 +160,7 @@ function memberships() {
                       productName: "ID CARD WBF", 
                       productPrice: "259.80",
                       description: "Certified internationally as an instructor in WBF, receive full access as a member, receive commissions for each student affiliated with us, receive exclusive grand master training",
-                      redirecto: "https://buy.stripe.com/6oEcNh0mI3D7brWdR4"
+                      redirecto: "https://buy.stripe.com/eVa9Cceft7SjawEbIM"
                     },
                   }}
                 >

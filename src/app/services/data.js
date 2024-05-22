@@ -84,11 +84,11 @@ export const Committee = [
   //   commiteName: "Dr. Robert Goldman",
   //   description: "Global Board of Directors",
   // },
-  {
-    committeePicture: committee5,
-    commiteName: "GM. Silvio Simac",
-    description: "Vice-president World Bushido Federation",
-  },
+  // {
+  //   committeePicture: committee5,
+  //   commiteName: "GM. Silvio Simac",
+  //   description: "Vice-president World Bushido Federation",
+  // },
   {
     committeePicture: committee6,
     commiteName: "GM. TODDY",
@@ -104,11 +104,11 @@ export const Committee = [
     commiteName: "GM Soke Raúl Gutierrez López",
     description: "Vice-president Bushido Federation in Europe",
   },
-  {
-    committeePicture: committee9,
-    commiteName: "GM Ron Van Clief",
-    description: "Official Committee in United States of America",
-  },
+  // {
+  //   committeePicture: committee9,
+  //   commiteName: "GM Ron Van Clief",
+  //   description: "Official Committee in United States of America",
+  // },
   {
     committeePicture: committee10,
     commiteName: "General Petkov",

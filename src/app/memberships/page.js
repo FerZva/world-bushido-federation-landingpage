@@ -63,7 +63,7 @@ function memberships() {
                   Membership
                 </h3>
                 <h3 className="container_membershippage-container_products-container_card-container_card_price">
-                  $75
+                  $45
                 </h3>
                 <p className="container_membershippage-container_products-container_card-container_card_label">
                   Per Annual
@@ -78,7 +78,7 @@ function memberships() {
                     pathname: "/cart",
                     query: {
                       productName: "Membership",
-                      productPrice: "77.94",
+                      productPrice: "47.94",
                       description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.",
                       redirecto: "https://buy.stripe.com/7sI01CgnBb4vawE145"
                     },

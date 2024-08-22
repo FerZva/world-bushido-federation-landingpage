@@ -80,7 +80,7 @@ function memberships() {
                       productName: "Membership",
                       productPrice: "47.94",
                       description: "Join the largest martial artist community in the world, acess to our library and local conferences and stream, Validate your title worldwide.",
-                      redirecto: "https://buy.stripe.com/https://buy.stripe.com/8wM3dO0oD0pRdIQ14z"
+                      redirecto: "https://buy.stripe.com/8wM5lW2wLa0rgV2bJe"
                     },
                   }}
                 >

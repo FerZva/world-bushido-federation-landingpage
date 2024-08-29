@@ -30,6 +30,7 @@
         &_logo-container {
             min-height: 100%;
             padding-top: 30px;
+            padding-left: 5.5rem;
 
             &_link {
                 padding: 1rem 0;
@@ -51,6 +52,8 @@
 
             &_menu {
                 display: flex;
+                width: 100%;
+                justify-content: center;
                 
                 @media screen and (max-width:1100px) {
                     flex-direction: column;
@@ -59,7 +62,7 @@
 
                 &_link{
                     min-height: 100%;
-                    margin-left: 0.50rem;
+                    margin-left: 2rem;
                     text-align: center;
                     text-decoration: none;
                     color: white;
@@ -72,7 +75,7 @@
                     @media screen and (max-width:1100px) {
                         display: block;
                         width: 100%;
-                        margin: 30px 0 0 auto;
+                        margin: 4rem 0 0 auto;
                         
                      }
                 }
@@ -143,9 +146,14 @@
         &_description {
             width: 100%;
             max-width: 50%;
-            text-align: center;
-            padding: 2.5rem;
+            text-align: left;
+            padding: 2.5rem 2.5rem 2.5rem 8rem;
+            line-height: 2rem;
             
+            &_CEO {
+                margin-top: 5.5rem;
+            }
+
             &_CEO-position {
                 margin-bottom: 30px;
             }
@@ -168,6 +176,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            filter: drop-shadow(4px 6px 12px red);
 
             @media screen and (max-width: 1200px) {
                 margin: auto;

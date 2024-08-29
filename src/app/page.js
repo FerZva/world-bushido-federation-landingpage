@@ -98,9 +98,9 @@ export default function Home() {
             </p>
 
             <br />
-            <p className="container_introduction-container_description_CEO">Hanshi Jorge Borjas</p>
-            <p className="container_introduction-container_description_CEO-position">CEO & FOUNDER WBF</p>
-            <Button buttontext="Join" link="/memberships"/>
+            <strong><p className="container_introduction-container_description_CEO">Hanshi Jorge Borjas</p></strong>
+            <strong><p className="container_introduction-container_description_CEO-position">CEO & FOUNDER WBF</p></strong>
+            <Button buttontext="Join Now" link="/memberships"/>
           </motion.div>
           <motion.div
            className="container_introduction-container_logo"

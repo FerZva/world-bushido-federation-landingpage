@@ -576,7 +576,7 @@
                     margin: 30px;
                     position: relative;
                     border-radius: 5px;
-                    border: 1px solid rgb(183, 0, 255);
+                    box-shadow: rgb(183, 0, 255) 0px 4px 12px;
                     
                     &_title, &_price, &_description,&_label {
                         margin-bottom: 20px;
@@ -595,6 +595,11 @@
                         width: 245px;
                         bottom: 20px;
                         font-size: 15px;
+                    }
+
+                    &:hover {
+                        transition: 0.2s ease all;
+                        border: 1px solid rgb(183, 0, 255);
                     }
                 }
             }

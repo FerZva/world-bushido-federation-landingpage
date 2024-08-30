@@ -127,7 +127,7 @@ function Page({ searchParams }) {
                 className="container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputrank"
               />
 
-              <label htmlFor="referral">Have you been referred?</label>
+              {/* <label htmlFor="referral">Have you been referred?</label>
               <select
                 className="container_checkout-container_payment-method-container_customerInformation_input container_checkout-container_payment-method-container_customerInformation_inputrank"
                 id="referral"
@@ -139,7 +139,7 @@ function Page({ searchParams }) {
                 <option value="SILVIO SIMAC UK">SILVIO SIMAC UK</option>
                 <option value="Other">Other</option>
                 <option value="None">None</option>
-              </select>
+              </select> */}
 
               {referral === "Other" && (
                 <input

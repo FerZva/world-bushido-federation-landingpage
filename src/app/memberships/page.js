@@ -54,7 +54,7 @@ function memberships() {
         <div className='container_membershippage-container_products-container'>
 
           <div className='container_membershippage-container_products-container_description'>
-            <h2>Memberships of WBF</h2>
+            <h2 className='container_membershippage-container_products-container_description_title'>Memberships of WBF</h2>
           </div>
 
           <div className="container_membershippage-container_products-container_card-container">
@@ -84,7 +84,7 @@ function memberships() {
                     },
                   }}
                 >
-                  <button>Join Now</button>
+                  <button className='container_membershippage-container_products-container_card-container_card_button'><strong>Join Now</strong></button>
                 </Link>
             </div>
             
@@ -114,7 +114,7 @@ function memberships() {
                     },
                   }}
                 >
-                  <button>Join Now</button>
+                  <button className='container_membershippage-container_products-container_card-container_card_button'><strong>Join Now</strong></button>
                 </Link>
             </div>
 
@@ -137,7 +137,7 @@ function memberships() {
                     },
                   }}
                 >
-                  <button>Join Now</button>
+                  <button className='container_membershippage-container_products-container_card-container_card_button'><strong>Join Now</strong></button>
                 </Link> 
                 {/* <Link
                     href="https://buy.stripe.com/7sI9B5glGehL53y5kx"
@@ -164,7 +164,7 @@ function memberships() {
                     },
                   }}
                 >
-                  <button>Join Now</button>
+                  <button className='container_membershippage-container_products-container_card-container_card_button'><strong>Join Now</strong></button>
                 </Link>
                 {/* <Link
                     href="https://buy.stripe.com/6oEcNh0mI3D7brWdR4"

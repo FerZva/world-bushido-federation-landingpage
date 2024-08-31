@@ -576,6 +576,7 @@
                     margin: 30px;
                     position: relative;
                     border-radius: 5px;
+                    border: 1px solid hsla(200,16%,17%,1);
                     box-shadow: rgb(183, 0, 255) 0px 4px 12px;
                     
                     &_title, &_price, &_description,&_label {

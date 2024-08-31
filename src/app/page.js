@@ -25,6 +25,20 @@ import './styles/styles.scss';
 import Footer from './components/Footer';
 
 export default function Home() {
+
+  const fadeInAnimationVariantes = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index,
+      },
+    }),
+  };
   
   const data = Disciplines;
   
@@ -126,12 +140,19 @@ export default function Home() {
               const { discipline } = disciplines
               return (
                 <div >
-                    <div
+                    <motion.div
                       key={index}
                       className="container_disciplines-section_discipline-container_discipline-name"
+                      variants={fadeInAnimationVariantes}
+                      initial="initial"
+                      whileInView="animate"
+                      viewport={{
+                        once: true,
+                      }}
+                      custom={index}
                     >
                       {discipline}
-                    </div>
+                    </motion.div>
                 </div>
               );
             })}

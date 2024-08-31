@@ -596,11 +596,19 @@
                         width: 245px;
                         bottom: 20px;
                         font-size: 15px;
+                        @media screen and (max-width: 443px) {
+                            width: 80%;
+                        }
                     }
 
                     &:hover {
                         transition: 0.2s ease all;
                         border: 1px solid rgb(183, 0, 255);
+                    }
+
+                    @media screen and (max-width: 443px) {
+                        padding-bottom: 50px;
+                        height: auto;
                     }
                 }
             }

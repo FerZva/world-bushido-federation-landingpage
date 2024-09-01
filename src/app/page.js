@@ -63,7 +63,6 @@ export default function Home() {
 
   const thirdDivRef = useRef(null);
   const fourthDivRef = useRef(null);
-  const fifthDivRef = useRef(null)
 
   useEffect(() => {
     const onScroll = () => {
@@ -388,7 +387,7 @@ export default function Home() {
       const { shieldImage1, shield2, shield3, shield4, shield5, shield6, shield7, shield8, shield9, shield10, shield11, shield12, shield13, shield14, shield15, shield16, shield17, shield18, shield19, shield20, shield21 } = shield;
       return (
         <motion.div className="container_verifications-container_carousel_inner-carousel_card" key={shield}>
-          <Image src={shieldImage1 || shield2 || shield3 || shield4 || shield5 || shield6 || shield7 || shield8 || shield9 || shield10 || shield11 || shield12 || shield13 || shield14 || shield15 || shield16 || shield17 || shield18 || shield19 || shield20 || shield21} alt="Verification Picture"/>
+          <Image key={index} src={shieldImage1 || shield2 || shield3 || shield4 || shield5 || shield6 || shield7 || shield8 || shield9 || shield10 || shield11 || shield12 || shield13 || shield14 || shield15 || shield16 || shield17 || shield18 || shield19 || shield20 || shield21} alt="Verification Picture"/>
         </motion.div>
       );
     })}

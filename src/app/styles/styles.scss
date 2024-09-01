@@ -15,15 +15,12 @@
     &_header {
         display: flex;
         justify-content: space-between;
-        max-width: 1920px;
         height: 100px;
+        min-width: 100%;
         position: sticky;
-        top: 0;
-        right: 0;
-        width: 100%;
+        min-width: 100%;
         padding: 0 2.25rem;
         align-items: center;
-        
         backdrop-filter: blur(10px);
         z-index: 200;
 
@@ -31,6 +28,10 @@
             min-height: 100%;
             padding-top: 30px;
             padding-left: 5.5rem;
+            
+            @media screen and (max-width: 443px) {
+                padding-left: 0;
+            }
 
             &_link {
                 padding: 1rem 0;
@@ -543,6 +544,9 @@
             &_description {
                 &_title {
                     font-size: 40px;
+                    @media screen and (max-width: 443px) {
+                        text-align: center;
+                    }
                 }
                 &_partnerlogo {
                     max-width: 500px;

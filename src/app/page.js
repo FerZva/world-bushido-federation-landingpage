@@ -124,8 +124,7 @@ export default function Home() {
             <Image
               src={bushidoLogo}
               className="container_introduction-container_logo_image"
-              width={600}
-              height={600}
+
             />
           </motion.div>
         </motion.main>

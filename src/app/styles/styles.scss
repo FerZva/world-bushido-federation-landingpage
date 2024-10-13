@@ -180,12 +180,13 @@
 
             &_image {
                 width: 60%;
-                height: 400px;
+                height: 600px;
                 filter: drop-shadow(4px 6px 12px red);
 
                 @media screen and (max-width: 850px) {
                     width: 100%;
                     padding: 0;
+                    height: 400px;
                 }
             }
 

@@ -231,7 +231,8 @@ export const Shields = [
   },
   {
     shield22: Shield22
-  },  {
+  },  
+  {
     shield23: Shield23
   },  
 

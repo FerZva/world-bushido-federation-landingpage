@@ -383,10 +383,10 @@ export default function Home() {
             dragConstraints={{ right: 0, left: -width }}
           >
           {Shields.map((shield, index) => {
-      const { shieldImage1, shield2, shield3, shield4, shield5, shield6, shield7, shield8, shield9, shield10, shield11, shield12, shield13, shield14, shield15, shield16, shield17, shield18, shield19, shield20, shield21 } = shield;
+      const { shieldImage1, shield2, shield3, shield4, shield5, shield6, shield7, shield8, shield9, shield10, shield11, shield12, shield13, shield14, shield15, shield16, shield17, shield18, shield19, shield20, shield21, shield22, shield23 } = shield;
       return (
         <motion.div className="container_verifications-container_carousel_inner-carousel_card" key={shield}>
-          <Image key={index} src={shieldImage1 || shield2 || shield3 || shield4 || shield5 || shield6 || shield7 || shield8 || shield9 || shield10 || shield11 || shield12 || shield13 || shield14 || shield15 || shield16 || shield17 || shield18 || shield19 || shield20 || shield21} alt="Verification Picture"/>
+          <Image key={index} src={shieldImage1 || shield2 || shield3 || shield4 || shield5 || shield6 || shield7 || shield8 || shield9 || shield10 || shield11 || shield12 || shield13 || shield14 || shield15 || shield16 || shield17 || shield18 || shield19 || shield20 || shield21 || shield22 || shield23 } alt="Verification Picture"/>
         </motion.div>
       );
     })}

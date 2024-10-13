@@ -18,32 +18,32 @@ import committee12 from "../assets/committee12.jpeg";
 import committee13 from "../assets/committee13.jpeg";
 import committee14 from "../assets/committee14.png";
 import committee15 from "../assets/committee15.jpeg";
-import commitee16 from "../assets/committee16-2.jpg"
-import commitee19 from "../assets/committee19.jpg"
+import commitee16 from "../assets/committee16-2.jpg";
+import commitee19 from "../assets/committee19.jpg";
 
-import Shield1 from '../assets/1-150x150.png'
-import Shield2 from '../assets/2-150x150.png'
-import Shield3 from '../assets/3-150x150.png'
-import Shield4 from '../assets/4-150x150.png'
-import Shield5 from '../assets/5-150x150.png'
-import Shield6 from '../assets/6-150x150.png'
-import Shield7 from '../assets/7-150x150.png'
-import Shield8 from '../assets/8-150x150.png'
-import Shield9 from '../assets/9-150x150.png'
-import Shield10 from '../assets/10-150x150.png'
-import Shield11 from '../assets/11-150x150.png'
-import Shield12 from '../assets/12-150x150.png'
-import Shield13 from '../assets/13-150x150.png'
-import Shield14 from '../assets/14-150x150.png'
-import Shield15 from '../assets/15-150x150.png'
-import Shield16 from '../assets/16-150x150.png'
-import Shield17 from '../assets/17-150x150.png'
-import Shield18 from '../assets/18-150x150.png'
-import Shield19 from '../assets/19-150x150.png'
-import Shield20 from '../assets/20-150x150.png'
-import Shield21 from '../assets/21-150x150.png'
-import Shield22 from '../assets/24.png'
-import Shield23 from '../assets/25.png'
+import Shield1 from '../assets/1-150x150.png';
+import Shield2 from '../assets/2-150x150.png';
+import Shield3 from '../assets/3-150x150.png';
+import Shield4 from '../assets/4-150x150.png';
+import Shield5 from '../assets/5-150x150.png';
+import Shield6 from '../assets/6-150x150.png';
+import Shield7 from '../assets/7-150x150.png';
+import Shield8 from '../assets/8-150x150.png';
+import Shield9 from '../assets/9-150x150.png';
+import Shield10 from '../assets/10-150x150.png';
+import Shield11 from '../assets/11-150x150.png';
+import Shield12 from '../assets/12-150x150.png';
+import Shield13 from '../assets/13-150x150.png';
+import Shield14 from '../assets/14-150x150.png';
+import Shield15 from '../assets/15-150x150.png';
+import Shield16 from '../assets/16-150x150.png';
+import Shield17 from '../assets/17-150x150.png';
+import Shield18 from '../assets/18-150x150.png';
+import Shield19 from '../assets/19-150x150.png';
+import Shield20 from '../assets/20-150x150.png';
+import Shield21 from '../assets/21-150x150.png';
+import Shield22 from '../assets/24.png';
+import Shield23 from '../assets/25.png';
 
 //Disciplines
 export const  Disciplines = [

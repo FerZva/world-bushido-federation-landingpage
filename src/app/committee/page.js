@@ -21,20 +21,20 @@ const page = () => {
 
         <div className="container_committee-container_committee">
           {data.map((committee, index) => {
-            const { committeePicture, commiteName, description } = committee;
             return (
               <div key={index} className="container_committee-container_committee_card">
                 <div className="container_committee-container_committee_card_picture-container">
                   <Image
-                    src={committeePicture}
+                    src={committee.committeePicture}
                     width={300}
                     height={300}
                     className="container_committee-container_committee_card_picture-container_committeePicture"
+                    alt="committee of world bushido member profile picture"
                   />
                 </div>
                 <div className="container_committee-container_committee_card_description">
-                  <h3>{commiteName}</h3>
-                  <p>{description}</p>
+                  <h3>{committee.commiteName}</h3>
+                  <p>{committee.description}</p>
                 </div>
               </div>
             );

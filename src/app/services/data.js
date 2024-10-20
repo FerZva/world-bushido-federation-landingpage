@@ -4,7 +4,7 @@ import product2 from "../assets/camisa 2.png";
 import product3 from "../assets/camisa 1.png";
 
 import committee1 from "../assets/committee1.png";
-import committee2 from "../assets/committee2.png";
+import committee2 from "../assets/committee2.jpg";
 import committee3 from "../assets/committee3.png";
 import committee4 from "../assets/committee4.png";
 import committee5 from "../assets/committee5.png";
@@ -20,6 +20,7 @@ import committee14 from "../assets/committee14.png";
 import committee15 from "../assets/committee15.jpeg";
 import commitee16 from "../assets/committee16-2.jpg";
 import commitee19 from "../assets/committee19.jpg";
+import commitee20 from "../assets/sensei-fernando.jpg"
 
 import Shield1 from '../assets/1-150x150.png';
 import Shield2 from '../assets/2-150x150.png';
@@ -78,8 +79,13 @@ export const Committee = [
   },
   {
     committeePicture: committee2,
-    commiteName: "Master Juan Manuel Olmedo",
-    description: "International Coordinator Bushido Federation",
+    commiteName: "Gilber Sandoval",
+    description: "International Director of Jiu-Jitsu",
+  },
+  {
+    commiteePicture: commitee20,
+    commiteName: "Sensei Fernando Velasquez",
+    description: "Sensei and Director Academy",
   },
   // {
   //   committeePicture: committee4,

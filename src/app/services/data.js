@@ -86,7 +86,7 @@ export const Committee = [
   {
     committeePicture: committee20,
     commiteName: "Sensei Fernando Velasquez",
-    description: "Master and Academy Director",
+    description: "President of World Bushido Federation Honduras",
   },
   // {
   //   committeePicture: committee4,

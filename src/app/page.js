@@ -16,7 +16,7 @@ import { Shields, Disciplines } from './services/data'
 
 import committee1 from './assets/committee1.png'
 import committee2 from './assets/committee14.png'
-import committee3 from './assets/committee16.png'
+import committee3 from './assets/committee20.jpg'
 import committee4 from './assets/committee3.png'
 
 import Button from './components/Button';
@@ -330,13 +330,13 @@ export default function Home() {
                   className="container_commite-introduction_commitecard-container_card_description_name"
                   htmlFor=""
                 >
-                  Shihan Juan Manuel Olmedo
+                  Sensei Fernando Velasquez
                 </label>
                 <label
                   className="container_commite-introduction_commitecard-container_card_description_position"
                   htmlFor=""
                 >
-                  {/* occupation */}
+                  President World Bushido Federation Honduras
                 </label>
               </div>
 

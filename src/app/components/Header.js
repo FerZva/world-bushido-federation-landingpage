@@ -115,6 +115,20 @@ const Header = () => {
           >
             <p>Membership</p>
           </Link>
+          <Link
+            href="/wbfhonduras"
+            className="container_header_navigation_menu_link"
+            onClick={toggleMenu}
+          >
+            <p>WBF Honduras</p>
+          </Link>
+          <Link
+            href="/promartialarts"
+            className="container_header_navigation_menu_link"
+            onClick={toggleMenu}
+          >
+            <p>Pro Martial Arts</p>
+          </Link>
         </div>
 
         <div className="container_header_navigation_buttons">

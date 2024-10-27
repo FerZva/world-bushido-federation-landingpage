@@ -46,6 +46,7 @@ import Shield20 from '../assets/20-150x150.png';
 import Shield21 from '../assets/21-150x150.png';
 import Shield22 from '../assets/24.png';
 import Shield23 from '../assets/25.png';
+import Shield24 from '../assets/newShield.png'
 
 //Disciplines
 export const  Disciplines = [
@@ -242,5 +243,7 @@ export const Shields = [
   {
     shield23: Shield23
   },  
-
+  {
+    shield24: Shield24
+  }
 ]

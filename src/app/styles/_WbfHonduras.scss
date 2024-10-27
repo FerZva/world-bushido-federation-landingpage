@@ -66,6 +66,14 @@
                     max-height: 300px;
                     margin: 20px;
                 }
+
+                @media screen and (max-width: 1019px) {
+                    margin-bottom: 190px;
+                }
+
+                @media screen and (max-width: 719px) {
+                    margin-bottom: 290px;
+                }
             }
         }
     }

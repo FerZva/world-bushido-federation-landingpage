@@ -40,6 +40,23 @@ const wbfhonduras = () => {
                   className='container_wbfhonduras-page_gallery-container_gallery_image'
                 />
               </div>
+              <div style={{ width: "100%" }}>
+                <h1>Why World Bushido Federation</h1>
+                <div style={{ display: "flex", justifyContent: "space-beetwen", flexWrap: "wrap", textAlign: "left" }}>
+                  <div style={{ maxWidth: "320px", padding: "20px", margin: "50px", backgroundColor: "rgba(190, 18, 60, 1)" }}>
+                    <h2 style={{ marginBottom: "20px" }}>Build Confidence</h2>
+                    <p>In World Bushido Federation we are dedicated to empowering you with the confidence and self-steem needed to get yourself out of a dangerous situation.</p>
+                  </div>
+                  <div style={{ maxWidth: "320px", padding: "20px", margin: "50px", backgroundColor: "rgba(190, 18, 60, 1)" }}>
+                    <h2 style={{ marginBottom: "20px" }}>Build Confidence</h2>
+                    <p>In World Bushido Federation we are dedicated to empowering you with the confidence and self-steem needed to get yourself out of a dangerous situation.</p>
+                  </div>
+                  <div style={{ maxWidth: "320px", padding: "20px", margin: "50px", backgroundColor: "rgba(190, 18, 60, 1)" }}>
+                    <h2 style={{ marginBottom: "20px" }}>Build Confidence</h2>
+                    <p>In World Bushido Federation we are dedicated to empowering you with the confidence and self-steem needed to get yourself out of a dangerous situation.</p>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         <Footer />
